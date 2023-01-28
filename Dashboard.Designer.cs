@@ -28,20 +28,37 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.navPanel = new System.Windows.Forms.Panel();
             this.SuspendLayout();
             // 
-            // Form1
+            // navPanel
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+            this.navPanel.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.navPanel.Dock = System.Windows.Forms.DockStyle.Left;
+            this.navPanel.Location = new System.Drawing.Point(0, 0);
+            this.navPanel.Name = "navPanel";
+            this.navPanel.Size = new System.Drawing.Size(200, 710);
+            this.navPanel.TabIndex = 0;
+            // 
+            // Dashboard
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1225, 671);
-            this.Name = "Form1";
+            this.ClientSize = new System.Drawing.Size(1241, 710);
+            this.Controls.Add(this.navPanel);
+            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Dashboard";
+            this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.ResumeLayout(false);
 
         }
 
         #endregion
+
+        private System.Windows.Forms.Panel navPanel;
     }
 }
 
