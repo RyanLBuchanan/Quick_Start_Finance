@@ -272,7 +272,7 @@
             // 
             // dashboardPanel
             // 
-            this.dashboardPanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dashboardPanel.BackColor = System.Drawing.Color.SteelBlue;
             this.dashboardPanel.Controls.Add(this.dashboardPictureBox);
             this.dashboardPanel.Controls.Add(this.dashboardLabel);
             this.dashboardPanel.Location = new System.Drawing.Point(0, 104);
