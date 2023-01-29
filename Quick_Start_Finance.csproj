@@ -83,5 +83,53 @@
   <ItemGroup>
     <None Include="Resources\Quick Start Finance logo.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expense-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-expense-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-income-gray.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\dashboard-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\expense-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\income-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\search-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-expense-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\view-income-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\logout-white.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\settings-white.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
