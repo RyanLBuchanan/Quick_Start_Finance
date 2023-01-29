@@ -139,6 +139,9 @@
   <data name="dashboard-gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\dashboard-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
+  <data name="exit-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  </data>
   <data name="search-gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\search-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
@@ -169,7 +172,7 @@
   <data name="view-expense-gray" type="System.Resources.ResXFileRef, System.Windows.Forms">
     <value>..\Resources\view-expense-gray.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
-  <data name="exit-white" type="System.Resources.ResXFileRef, System.Windows.Forms">
-    <value>..\Resources\exit-white.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
+  <data name="exit-white1" type="System.Resources.ResXFileRef, System.Windows.Forms">
+    <value>..\Resources\exit-white1.png;System.Drawing.Bitmap, System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a</value>
   </data>
 </root>

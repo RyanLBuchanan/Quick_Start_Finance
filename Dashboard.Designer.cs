@@ -29,27 +29,27 @@
         private void InitializeComponent()
         {
             this.navPanel = new System.Windows.Forms.Panel();
-            this.settingsLabel = new System.Windows.Forms.Label();
-            this.logoutLabel = new System.Windows.Forms.Label();
-            this.viewExpenseLabel = new System.Windows.Forms.Label();
-            this.viewIncomeLabel = new System.Windows.Forms.Label();
-            this.expenseLabel = new System.Windows.Forms.Label();
-            this.incomeLabel = new System.Windows.Forms.Label();
-            this.dashboardLabel = new System.Windows.Forms.Label();
-            this.dashboardPanel = new System.Windows.Forms.Panel();
             this.incomePanel = new System.Windows.Forms.Panel();
+            this.incomeLabel = new System.Windows.Forms.Label();
             this.viewIncomePanel = new System.Windows.Forms.Panel();
+            this.viewIncomeLabel = new System.Windows.Forms.Label();
             this.expensePanel = new System.Windows.Forms.Panel();
+            this.expenseLabel = new System.Windows.Forms.Label();
             this.viewExpensePanel = new System.Windows.Forms.Panel();
+            this.viewExpenseLabel = new System.Windows.Forms.Label();
             this.settingsPanel = new System.Windows.Forms.Panel();
+            this.settingsLabel = new System.Windows.Forms.Label();
             this.logoutPanel = new System.Windows.Forms.Panel();
+            this.logoutLabel = new System.Windows.Forms.Label();
+            this.dashboardPanel = new System.Windows.Forms.Panel();
+            this.dashboardLabel = new System.Windows.Forms.Label();
             this.personalFinanceDashboardLabel = new System.Windows.Forms.Label();
             this.totalIncomePanel = new System.Windows.Forms.Panel();
-            this.totalIncomeLabel = new System.Windows.Forms.Label();
-            this.amountInDollarsLabel = new System.Windows.Forms.Label();
-            this.transactionsLabel = new System.Windows.Forms.Label();
-            this.numberTransactionsLabel = new System.Windows.Forms.Label();
             this.lastTransactionDateLabel = new System.Windows.Forms.Label();
+            this.numberTransactionsLabel = new System.Windows.Forms.Label();
+            this.transactionsLabel = new System.Windows.Forms.Label();
+            this.amountInDollarsLabel = new System.Windows.Forms.Label();
+            this.totalIncomeLabel = new System.Windows.Forms.Label();
             this.totalExpensePanel = new System.Windows.Forms.Panel();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
@@ -83,6 +83,9 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.exitPanel = new System.Windows.Forms.Panel();
+            this.exitLabel = new System.Windows.Forms.Label();
+            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.incomePictureBox = new System.Windows.Forms.PictureBox();
             this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
             this.expensePictureBox = new System.Windows.Forms.PictureBox();
@@ -91,17 +94,14 @@
             this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.exitPanel = new System.Windows.Forms.Panel();
-            this.exitPictureBox = new System.Windows.Forms.PictureBox();
-            this.exitLabel = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
-            this.dashboardPanel.SuspendLayout();
             this.incomePanel.SuspendLayout();
             this.viewIncomePanel.SuspendLayout();
             this.expensePanel.SuspendLayout();
             this.viewExpensePanel.SuspendLayout();
             this.settingsPanel.SuspendLayout();
             this.logoutPanel.SuspendLayout();
+            this.dashboardPanel.SuspendLayout();
             this.totalIncomePanel.SuspendLayout();
             this.totalExpensePanel.SuspendLayout();
             this.maximumIncomePanel.SuspendLayout();
@@ -113,6 +113,8 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            this.exitPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
@@ -121,8 +123,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            this.exitPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
@@ -144,60 +144,15 @@
             this.navPanel.Size = new System.Drawing.Size(224, 800);
             this.navPanel.TabIndex = 0;
             // 
-            // settingsLabel
+            // incomePanel
             // 
-            this.settingsLabel.AutoSize = true;
-            this.settingsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.settingsLabel.ForeColor = System.Drawing.Color.White;
-            this.settingsLabel.Location = new System.Drawing.Point(56, 16);
-            this.settingsLabel.Name = "settingsLabel";
-            this.settingsLabel.Size = new System.Drawing.Size(90, 25);
-            this.settingsLabel.TabIndex = 14;
-            this.settingsLabel.Text = "Settings";
-            // 
-            // logoutLabel
-            // 
-            this.logoutLabel.AutoSize = true;
-            this.logoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.logoutLabel.ForeColor = System.Drawing.Color.White;
-            this.logoutLabel.Location = new System.Drawing.Point(56, 16);
-            this.logoutLabel.Name = "logoutLabel";
-            this.logoutLabel.Size = new System.Drawing.Size(78, 25);
-            this.logoutLabel.TabIndex = 12;
-            this.logoutLabel.Text = "Logout";
-            // 
-            // viewExpenseLabel
-            // 
-            this.viewExpenseLabel.AutoSize = true;
-            this.viewExpenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewExpenseLabel.ForeColor = System.Drawing.Color.White;
-            this.viewExpenseLabel.Location = new System.Drawing.Point(56, 16);
-            this.viewExpenseLabel.Name = "viewExpenseLabel";
-            this.viewExpenseLabel.Size = new System.Drawing.Size(148, 25);
-            this.viewExpenseLabel.TabIndex = 10;
-            this.viewExpenseLabel.Text = "View Expense";
-            // 
-            // viewIncomeLabel
-            // 
-            this.viewIncomeLabel.AutoSize = true;
-            this.viewIncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.viewIncomeLabel.ForeColor = System.Drawing.Color.White;
-            this.viewIncomeLabel.Location = new System.Drawing.Point(56, 16);
-            this.viewIncomeLabel.Name = "viewIncomeLabel";
-            this.viewIncomeLabel.Size = new System.Drawing.Size(133, 25);
-            this.viewIncomeLabel.TabIndex = 8;
-            this.viewIncomeLabel.Text = "View Income";
-            // 
-            // expenseLabel
-            // 
-            this.expenseLabel.AutoSize = true;
-            this.expenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.expenseLabel.ForeColor = System.Drawing.Color.White;
-            this.expenseLabel.Location = new System.Drawing.Point(56, 16);
-            this.expenseLabel.Name = "expenseLabel";
-            this.expenseLabel.Size = new System.Drawing.Size(96, 25);
-            this.expenseLabel.TabIndex = 6;
-            this.expenseLabel.Text = "Expense";
+            this.incomePanel.Controls.Add(this.incomePictureBox);
+            this.incomePanel.Controls.Add(this.incomeLabel);
+            this.incomePanel.Location = new System.Drawing.Point(0, 152);
+            this.incomePanel.Name = "incomePanel";
+            this.incomePanel.Size = new System.Drawing.Size(224, 48);
+            this.incomePanel.TabIndex = 17;
+            this.incomePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.incomePanel_MouseClick);
             // 
             // incomeLabel
             // 
@@ -210,16 +165,110 @@
             this.incomeLabel.TabIndex = 4;
             this.incomeLabel.Text = "Income";
             // 
-            // dashboardLabel
+            // viewIncomePanel
             // 
-            this.dashboardLabel.AutoSize = true;
-            this.dashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dashboardLabel.ForeColor = System.Drawing.Color.White;
-            this.dashboardLabel.Location = new System.Drawing.Point(56, 16);
-            this.dashboardLabel.Name = "dashboardLabel";
-            this.dashboardLabel.Size = new System.Drawing.Size(117, 25);
-            this.dashboardLabel.TabIndex = 2;
-            this.dashboardLabel.Text = "Dashboard";
+            this.viewIncomePanel.Controls.Add(this.viewIncomePictureBox);
+            this.viewIncomePanel.Controls.Add(this.viewIncomeLabel);
+            this.viewIncomePanel.Location = new System.Drawing.Point(0, 248);
+            this.viewIncomePanel.Name = "viewIncomePanel";
+            this.viewIncomePanel.Size = new System.Drawing.Size(224, 48);
+            this.viewIncomePanel.TabIndex = 17;
+            this.viewIncomePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewIncomePanel_MouseClick);
+            // 
+            // viewIncomeLabel
+            // 
+            this.viewIncomeLabel.AutoSize = true;
+            this.viewIncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewIncomeLabel.ForeColor = System.Drawing.Color.White;
+            this.viewIncomeLabel.Location = new System.Drawing.Point(56, 16);
+            this.viewIncomeLabel.Name = "viewIncomeLabel";
+            this.viewIncomeLabel.Size = new System.Drawing.Size(133, 25);
+            this.viewIncomeLabel.TabIndex = 8;
+            this.viewIncomeLabel.Text = "View Income";
+            // 
+            // expensePanel
+            // 
+            this.expensePanel.Controls.Add(this.expensePictureBox);
+            this.expensePanel.Controls.Add(this.expenseLabel);
+            this.expensePanel.Location = new System.Drawing.Point(0, 200);
+            this.expensePanel.Name = "expensePanel";
+            this.expensePanel.Size = new System.Drawing.Size(224, 48);
+            this.expensePanel.TabIndex = 17;
+            this.expensePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.expensePanel_MouseClick);
+            // 
+            // expenseLabel
+            // 
+            this.expenseLabel.AutoSize = true;
+            this.expenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.expenseLabel.ForeColor = System.Drawing.Color.White;
+            this.expenseLabel.Location = new System.Drawing.Point(56, 16);
+            this.expenseLabel.Name = "expenseLabel";
+            this.expenseLabel.Size = new System.Drawing.Size(96, 25);
+            this.expenseLabel.TabIndex = 6;
+            this.expenseLabel.Text = "Expense";
+            // 
+            // viewExpensePanel
+            // 
+            this.viewExpensePanel.Controls.Add(this.viewExpensePictureBox);
+            this.viewExpensePanel.Controls.Add(this.viewExpenseLabel);
+            this.viewExpensePanel.Location = new System.Drawing.Point(0, 296);
+            this.viewExpensePanel.Name = "viewExpensePanel";
+            this.viewExpensePanel.Size = new System.Drawing.Size(224, 48);
+            this.viewExpensePanel.TabIndex = 17;
+            this.viewExpensePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewExpensePanel_MouseClick);
+            // 
+            // viewExpenseLabel
+            // 
+            this.viewExpenseLabel.AutoSize = true;
+            this.viewExpenseLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.viewExpenseLabel.ForeColor = System.Drawing.Color.White;
+            this.viewExpenseLabel.Location = new System.Drawing.Point(56, 16);
+            this.viewExpenseLabel.Name = "viewExpenseLabel";
+            this.viewExpenseLabel.Size = new System.Drawing.Size(148, 25);
+            this.viewExpenseLabel.TabIndex = 10;
+            this.viewExpenseLabel.Text = "View Expense";
+            // 
+            // settingsPanel
+            // 
+            this.settingsPanel.Controls.Add(this.settingsPictureBox);
+            this.settingsPanel.Controls.Add(this.settingsLabel);
+            this.settingsPanel.Location = new System.Drawing.Point(0, 600);
+            this.settingsPanel.Name = "settingsPanel";
+            this.settingsPanel.Size = new System.Drawing.Size(224, 48);
+            this.settingsPanel.TabIndex = 17;
+            this.settingsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.settingsPanel_MouseClick);
+            // 
+            // settingsLabel
+            // 
+            this.settingsLabel.AutoSize = true;
+            this.settingsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.settingsLabel.ForeColor = System.Drawing.Color.White;
+            this.settingsLabel.Location = new System.Drawing.Point(56, 16);
+            this.settingsLabel.Name = "settingsLabel";
+            this.settingsLabel.Size = new System.Drawing.Size(90, 25);
+            this.settingsLabel.TabIndex = 14;
+            this.settingsLabel.Text = "Settings";
+            // 
+            // logoutPanel
+            // 
+            this.logoutPanel.Controls.Add(this.logoutPictureBox);
+            this.logoutPanel.Controls.Add(this.logoutLabel);
+            this.logoutPanel.Location = new System.Drawing.Point(0, 648);
+            this.logoutPanel.Name = "logoutPanel";
+            this.logoutPanel.Size = new System.Drawing.Size(224, 48);
+            this.logoutPanel.TabIndex = 17;
+            this.logoutPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.logoutPanel_MouseClick);
+            // 
+            // logoutLabel
+            // 
+            this.logoutLabel.AutoSize = true;
+            this.logoutLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.logoutLabel.ForeColor = System.Drawing.Color.White;
+            this.logoutLabel.Location = new System.Drawing.Point(56, 16);
+            this.logoutLabel.Name = "logoutLabel";
+            this.logoutLabel.Size = new System.Drawing.Size(78, 25);
+            this.logoutLabel.TabIndex = 12;
+            this.logoutLabel.Text = "Logout";
             // 
             // dashboardPanel
             // 
@@ -232,65 +281,16 @@
             this.dashboardPanel.TabIndex = 15;
             this.dashboardPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.dashboardPanel_MouseClick);
             // 
-            // incomePanel
+            // dashboardLabel
             // 
-            this.incomePanel.Controls.Add(this.incomePictureBox);
-            this.incomePanel.Controls.Add(this.incomeLabel);
-            this.incomePanel.Location = new System.Drawing.Point(0, 152);
-            this.incomePanel.Name = "incomePanel";
-            this.incomePanel.Size = new System.Drawing.Size(224, 48);
-            this.incomePanel.TabIndex = 17;
-            this.incomePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.incomePanel_MouseClick);
-            // 
-            // viewIncomePanel
-            // 
-            this.viewIncomePanel.Controls.Add(this.viewIncomePictureBox);
-            this.viewIncomePanel.Controls.Add(this.viewIncomeLabel);
-            this.viewIncomePanel.Location = new System.Drawing.Point(0, 248);
-            this.viewIncomePanel.Name = "viewIncomePanel";
-            this.viewIncomePanel.Size = new System.Drawing.Size(224, 48);
-            this.viewIncomePanel.TabIndex = 17;
-            this.viewIncomePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewIncomePanel_MouseClick);
-            // 
-            // expensePanel
-            // 
-            this.expensePanel.Controls.Add(this.expensePictureBox);
-            this.expensePanel.Controls.Add(this.expenseLabel);
-            this.expensePanel.Location = new System.Drawing.Point(0, 200);
-            this.expensePanel.Name = "expensePanel";
-            this.expensePanel.Size = new System.Drawing.Size(224, 48);
-            this.expensePanel.TabIndex = 17;
-            this.expensePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.expensePanel_MouseClick);
-            // 
-            // viewExpensePanel
-            // 
-            this.viewExpensePanel.Controls.Add(this.viewExpensePictureBox);
-            this.viewExpensePanel.Controls.Add(this.viewExpenseLabel);
-            this.viewExpensePanel.Location = new System.Drawing.Point(0, 296);
-            this.viewExpensePanel.Name = "viewExpensePanel";
-            this.viewExpensePanel.Size = new System.Drawing.Size(224, 48);
-            this.viewExpensePanel.TabIndex = 17;
-            this.viewExpensePanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.viewExpensePanel_MouseClick);
-            // 
-            // settingsPanel
-            // 
-            this.settingsPanel.Controls.Add(this.settingsPictureBox);
-            this.settingsPanel.Controls.Add(this.settingsLabel);
-            this.settingsPanel.Location = new System.Drawing.Point(0, 648);
-            this.settingsPanel.Name = "settingsPanel";
-            this.settingsPanel.Size = new System.Drawing.Size(224, 48);
-            this.settingsPanel.TabIndex = 17;
-            this.settingsPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.settingsPanel_MouseClick);
-            // 
-            // logoutPanel
-            // 
-            this.logoutPanel.Controls.Add(this.logoutPictureBox);
-            this.logoutPanel.Controls.Add(this.logoutLabel);
-            this.logoutPanel.Location = new System.Drawing.Point(0, 696);
-            this.logoutPanel.Name = "logoutPanel";
-            this.logoutPanel.Size = new System.Drawing.Size(224, 48);
-            this.logoutPanel.TabIndex = 17;
-            this.logoutPanel.MouseClick += new System.Windows.Forms.MouseEventHandler(this.logoutPanel_MouseClick);
+            this.dashboardLabel.AutoSize = true;
+            this.dashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dashboardLabel.ForeColor = System.Drawing.Color.White;
+            this.dashboardLabel.Location = new System.Drawing.Point(56, 16);
+            this.dashboardLabel.Name = "dashboardLabel";
+            this.dashboardLabel.Size = new System.Drawing.Size(117, 25);
+            this.dashboardLabel.TabIndex = 2;
+            this.dashboardLabel.Text = "Dashboard";
             // 
             // personalFinanceDashboardLabel
             // 
@@ -317,38 +317,16 @@
             this.totalIncomePanel.Size = new System.Drawing.Size(288, 248);
             this.totalIncomePanel.TabIndex = 4;
             // 
-            // totalIncomeLabel
+            // lastTransactionDateLabel
             // 
-            this.totalIncomeLabel.AutoSize = true;
-            this.totalIncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.totalIncomeLabel.ForeColor = System.Drawing.Color.SteelBlue;
-            this.totalIncomeLabel.Location = new System.Drawing.Point(56, 8);
-            this.totalIncomeLabel.Name = "totalIncomeLabel";
-            this.totalIncomeLabel.Size = new System.Drawing.Size(165, 29);
-            this.totalIncomeLabel.TabIndex = 3;
-            this.totalIncomeLabel.Text = "Total Income";
-            // 
-            // amountInDollarsLabel
-            // 
-            this.amountInDollarsLabel.AutoSize = true;
-            this.amountInDollarsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountInDollarsLabel.ForeColor = System.Drawing.Color.White;
-            this.amountInDollarsLabel.Location = new System.Drawing.Point(8, 56);
-            this.amountInDollarsLabel.Name = "amountInDollarsLabel";
-            this.amountInDollarsLabel.Size = new System.Drawing.Size(181, 25);
-            this.amountInDollarsLabel.TabIndex = 4;
-            this.amountInDollarsLabel.Text = "Amount in Dollars";
-            // 
-            // transactionsLabel
-            // 
-            this.transactionsLabel.AutoSize = true;
-            this.transactionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.transactionsLabel.ForeColor = System.Drawing.Color.White;
-            this.transactionsLabel.Location = new System.Drawing.Point(8, 112);
-            this.transactionsLabel.Name = "transactionsLabel";
-            this.transactionsLabel.Size = new System.Drawing.Size(136, 25);
-            this.transactionsLabel.TabIndex = 5;
-            this.transactionsLabel.Text = "Transactions";
+            this.lastTransactionDateLabel.AutoSize = true;
+            this.lastTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastTransactionDateLabel.ForeColor = System.Drawing.Color.White;
+            this.lastTransactionDateLabel.Location = new System.Drawing.Point(32, 216);
+            this.lastTransactionDateLabel.Name = "lastTransactionDateLabel";
+            this.lastTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
+            this.lastTransactionDateLabel.TabIndex = 7;
+            this.lastTransactionDateLabel.Text = "Last Transaction Date";
             // 
             // numberTransactionsLabel
             // 
@@ -361,16 +339,38 @@
             this.numberTransactionsLabel.TabIndex = 6;
             this.numberTransactionsLabel.Text = "number";
             // 
-            // lastTransactionDateLabel
+            // transactionsLabel
             // 
-            this.lastTransactionDateLabel.AutoSize = true;
-            this.lastTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastTransactionDateLabel.ForeColor = System.Drawing.Color.White;
-            this.lastTransactionDateLabel.Location = new System.Drawing.Point(32, 216);
-            this.lastTransactionDateLabel.Name = "lastTransactionDateLabel";
-            this.lastTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
-            this.lastTransactionDateLabel.TabIndex = 7;
-            this.lastTransactionDateLabel.Text = "Last Transaction Date";
+            this.transactionsLabel.AutoSize = true;
+            this.transactionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.transactionsLabel.ForeColor = System.Drawing.Color.White;
+            this.transactionsLabel.Location = new System.Drawing.Point(8, 112);
+            this.transactionsLabel.Name = "transactionsLabel";
+            this.transactionsLabel.Size = new System.Drawing.Size(136, 25);
+            this.transactionsLabel.TabIndex = 5;
+            this.transactionsLabel.Text = "Transactions";
+            // 
+            // amountInDollarsLabel
+            // 
+            this.amountInDollarsLabel.AutoSize = true;
+            this.amountInDollarsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.amountInDollarsLabel.ForeColor = System.Drawing.Color.White;
+            this.amountInDollarsLabel.Location = new System.Drawing.Point(8, 56);
+            this.amountInDollarsLabel.Name = "amountInDollarsLabel";
+            this.amountInDollarsLabel.Size = new System.Drawing.Size(181, 25);
+            this.amountInDollarsLabel.TabIndex = 4;
+            this.amountInDollarsLabel.Text = "Amount in Dollars";
+            // 
+            // totalIncomeLabel
+            // 
+            this.totalIncomeLabel.AutoSize = true;
+            this.totalIncomeLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalIncomeLabel.ForeColor = System.Drawing.Color.SteelBlue;
+            this.totalIncomeLabel.Location = new System.Drawing.Point(56, 8);
+            this.totalIncomeLabel.Name = "totalIncomeLabel";
+            this.totalIncomeLabel.Size = new System.Drawing.Size(165, 29);
+            this.totalIncomeLabel.TabIndex = 3;
+            this.totalIncomeLabel.Text = "Total Income";
             // 
             // totalExpensePanel
             // 
@@ -728,6 +728,36 @@
             this.label21.TabIndex = 3;
             this.label21.Text = "Best Income Category";
             // 
+            // exitPanel
+            // 
+            this.exitPanel.Controls.Add(this.exitPictureBox);
+            this.exitPanel.Controls.Add(this.exitLabel);
+            this.exitPanel.Location = new System.Drawing.Point(0, 696);
+            this.exitPanel.Name = "exitPanel";
+            this.exitPanel.Size = new System.Drawing.Size(224, 48);
+            this.exitPanel.TabIndex = 18;
+            // 
+            // exitLabel
+            // 
+            this.exitLabel.AutoSize = true;
+            this.exitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitLabel.ForeColor = System.Drawing.Color.White;
+            this.exitLabel.Location = new System.Drawing.Point(56, 16);
+            this.exitLabel.Name = "exitLabel";
+            this.exitLabel.Size = new System.Drawing.Size(48, 25);
+            this.exitLabel.TabIndex = 12;
+            this.exitLabel.Text = "Exit";
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white1;
+            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 11;
+            this.exitPictureBox.TabStop = false;
+            // 
             // incomePictureBox
             // 
             this.incomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.income_white;
@@ -808,36 +838,6 @@
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
-            // exitPanel
-            // 
-            this.exitPanel.Controls.Add(this.exitPictureBox);
-            this.exitPanel.Controls.Add(this.exitLabel);
-            this.exitPanel.Location = new System.Drawing.Point(0, 744);
-            this.exitPanel.Name = "exitPanel";
-            this.exitPanel.Size = new System.Drawing.Size(224, 48);
-            this.exitPanel.TabIndex = 18;
-            // 
-            // exitPictureBox
-            // 
-            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white;
-            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exitPictureBox.TabIndex = 11;
-            this.exitPictureBox.TabStop = false;
-            // 
-            // exitLabel
-            // 
-            this.exitLabel.AutoSize = true;
-            this.exitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.exitLabel.ForeColor = System.Drawing.Color.White;
-            this.exitLabel.Location = new System.Drawing.Point(56, 16);
-            this.exitLabel.Name = "exitLabel";
-            this.exitLabel.Size = new System.Drawing.Size(48, 25);
-            this.exitLabel.TabIndex = 12;
-            this.exitLabel.Text = "Exit";
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -864,8 +864,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.navPanel.ResumeLayout(false);
-            this.dashboardPanel.ResumeLayout(false);
-            this.dashboardPanel.PerformLayout();
             this.incomePanel.ResumeLayout(false);
             this.incomePanel.PerformLayout();
             this.viewIncomePanel.ResumeLayout(false);
@@ -878,6 +876,8 @@
             this.settingsPanel.PerformLayout();
             this.logoutPanel.ResumeLayout(false);
             this.logoutPanel.PerformLayout();
+            this.dashboardPanel.ResumeLayout(false);
+            this.dashboardPanel.PerformLayout();
             this.totalIncomePanel.ResumeLayout(false);
             this.totalIncomePanel.PerformLayout();
             this.totalExpensePanel.ResumeLayout(false);
@@ -900,6 +900,9 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            this.exitPanel.ResumeLayout(false);
+            this.exitPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
@@ -908,9 +911,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            this.exitPanel.ResumeLayout(false);
-            this.exitPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -981,6 +981,9 @@
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label label20;
         private System.Windows.Forms.Label label21;
+        private System.Windows.Forms.Panel exitPanel;
+        private System.Windows.Forms.PictureBox exitPictureBox;
+        private System.Windows.Forms.Label exitLabel;
     }
 }
 

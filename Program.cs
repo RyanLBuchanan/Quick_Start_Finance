@@ -16,7 +16,7 @@ namespace Quick_Start_Finance
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Income());
+            Application.Run(new Dashboard());
         }
     }
 }
