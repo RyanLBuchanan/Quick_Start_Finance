@@ -30,20 +30,12 @@
         {
             this.navPanel = new System.Windows.Forms.Panel();
             this.settingsLabel = new System.Windows.Forms.Label();
-            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
             this.logoutLabel = new System.Windows.Forms.Label();
-            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.viewExpenseLabel = new System.Windows.Forms.Label();
-            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
             this.viewIncomeLabel = new System.Windows.Forms.Label();
-            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
             this.expenseLabel = new System.Windows.Forms.Label();
-            this.expensePictureBox = new System.Windows.Forms.PictureBox();
             this.incomeLabel = new System.Windows.Forms.Label();
-            this.incomePictureBox = new System.Windows.Forms.PictureBox();
             this.dashboardLabel = new System.Windows.Forms.Label();
-            this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
-            this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.dashboardPanel = new System.Windows.Forms.Panel();
             this.incomePanel = new System.Windows.Forms.Panel();
             this.viewIncomePanel = new System.Windows.Forms.Panel();
@@ -91,15 +83,18 @@
             this.panel8 = new System.Windows.Forms.Panel();
             this.label20 = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
+            this.incomePictureBox = new System.Windows.Forms.PictureBox();
+            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
+            this.expensePictureBox = new System.Windows.Forms.PictureBox();
+            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
+            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
+            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
+            this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.exitPanel = new System.Windows.Forms.Panel();
+            this.exitPictureBox = new System.Windows.Forms.PictureBox();
+            this.exitLabel = new System.Windows.Forms.Label();
             this.navPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.dashboardPanel.SuspendLayout();
             this.incomePanel.SuspendLayout();
             this.viewIncomePanel.SuspendLayout();
@@ -118,11 +113,22 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.exitPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
             // 
             this.navPanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.navPanel.Controls.Add(this.exitPanel);
             this.navPanel.Controls.Add(this.incomePanel);
             this.navPanel.Controls.Add(this.viewIncomePanel);
             this.navPanel.Controls.Add(this.expensePanel);
@@ -149,16 +155,6 @@
             this.settingsLabel.TabIndex = 14;
             this.settingsLabel.Text = "Settings";
             // 
-            // settingsPictureBox
-            // 
-            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
-            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.settingsPictureBox.Name = "settingsPictureBox";
-            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.settingsPictureBox.TabIndex = 13;
-            this.settingsPictureBox.TabStop = false;
-            // 
             // logoutLabel
             // 
             this.logoutLabel.AutoSize = true;
@@ -169,16 +165,6 @@
             this.logoutLabel.Size = new System.Drawing.Size(78, 25);
             this.logoutLabel.TabIndex = 12;
             this.logoutLabel.Text = "Logout";
-            // 
-            // logoutPictureBox
-            // 
-            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
-            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoutPictureBox.TabIndex = 11;
-            this.logoutPictureBox.TabStop = false;
             // 
             // viewExpenseLabel
             // 
@@ -191,16 +177,6 @@
             this.viewExpenseLabel.TabIndex = 10;
             this.viewExpenseLabel.Text = "View Expense";
             // 
-            // viewExpensePictureBox
-            // 
-            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
-            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
-            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewExpensePictureBox.TabIndex = 9;
-            this.viewExpensePictureBox.TabStop = false;
-            // 
             // viewIncomeLabel
             // 
             this.viewIncomeLabel.AutoSize = true;
@@ -211,16 +187,6 @@
             this.viewIncomeLabel.Size = new System.Drawing.Size(133, 25);
             this.viewIncomeLabel.TabIndex = 8;
             this.viewIncomeLabel.Text = "View Income";
-            // 
-            // viewIncomePictureBox
-            // 
-            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
-            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
-            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewIncomePictureBox.TabIndex = 7;
-            this.viewIncomePictureBox.TabStop = false;
             // 
             // expenseLabel
             // 
@@ -233,16 +199,6 @@
             this.expenseLabel.TabIndex = 6;
             this.expenseLabel.Text = "Expense";
             // 
-            // expensePictureBox
-            // 
-            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
-            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.expensePictureBox.Name = "expensePictureBox";
-            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.expensePictureBox.TabIndex = 5;
-            this.expensePictureBox.TabStop = false;
-            // 
             // incomeLabel
             // 
             this.incomeLabel.AutoSize = true;
@@ -254,16 +210,6 @@
             this.incomeLabel.TabIndex = 4;
             this.incomeLabel.Text = "Income";
             // 
-            // incomePictureBox
-            // 
-            this.incomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.income_white;
-            this.incomePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.incomePictureBox.Name = "incomePictureBox";
-            this.incomePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.incomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.incomePictureBox.TabIndex = 3;
-            this.incomePictureBox.TabStop = false;
-            // 
             // dashboardLabel
             // 
             this.dashboardLabel.AutoSize = true;
@@ -274,26 +220,6 @@
             this.dashboardLabel.Size = new System.Drawing.Size(117, 25);
             this.dashboardLabel.TabIndex = 2;
             this.dashboardLabel.Text = "Dashboard";
-            // 
-            // dashboardPictureBox
-            // 
-            this.dashboardPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.dashboard_white;
-            this.dashboardPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.dashboardPictureBox.Name = "dashboardPictureBox";
-            this.dashboardPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.dashboardPictureBox.TabIndex = 1;
-            this.dashboardPictureBox.TabStop = false;
-            // 
-            // logoPictureBox
-            // 
-            this.logoPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.Quick_Start_Finance_logo;
-            this.logoPictureBox.Location = new System.Drawing.Point(8, 8);
-            this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(208, 48);
-            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoPictureBox.TabIndex = 0;
-            this.logoPictureBox.TabStop = false;
             // 
             // dashboardPanel
             // 
@@ -350,7 +276,7 @@
             // 
             this.settingsPanel.Controls.Add(this.settingsPictureBox);
             this.settingsPanel.Controls.Add(this.settingsLabel);
-            this.settingsPanel.Location = new System.Drawing.Point(0, 696);
+            this.settingsPanel.Location = new System.Drawing.Point(0, 648);
             this.settingsPanel.Name = "settingsPanel";
             this.settingsPanel.Size = new System.Drawing.Size(224, 48);
             this.settingsPanel.TabIndex = 17;
@@ -360,7 +286,7 @@
             // 
             this.logoutPanel.Controls.Add(this.logoutPictureBox);
             this.logoutPanel.Controls.Add(this.logoutLabel);
-            this.logoutPanel.Location = new System.Drawing.Point(0, 744);
+            this.logoutPanel.Location = new System.Drawing.Point(0, 696);
             this.logoutPanel.Name = "logoutPanel";
             this.logoutPanel.Size = new System.Drawing.Size(224, 48);
             this.logoutPanel.TabIndex = 17;
@@ -802,6 +728,116 @@
             this.label21.TabIndex = 3;
             this.label21.Text = "Best Income Category";
             // 
+            // incomePictureBox
+            // 
+            this.incomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.income_white;
+            this.incomePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.incomePictureBox.Name = "incomePictureBox";
+            this.incomePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.incomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.incomePictureBox.TabIndex = 3;
+            this.incomePictureBox.TabStop = false;
+            // 
+            // viewIncomePictureBox
+            // 
+            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
+            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
+            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewIncomePictureBox.TabIndex = 7;
+            this.viewIncomePictureBox.TabStop = false;
+            // 
+            // expensePictureBox
+            // 
+            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
+            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.expensePictureBox.Name = "expensePictureBox";
+            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.expensePictureBox.TabIndex = 5;
+            this.expensePictureBox.TabStop = false;
+            // 
+            // viewExpensePictureBox
+            // 
+            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
+            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
+            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewExpensePictureBox.TabIndex = 9;
+            this.viewExpensePictureBox.TabStop = false;
+            // 
+            // settingsPictureBox
+            // 
+            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
+            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.settingsPictureBox.Name = "settingsPictureBox";
+            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsPictureBox.TabIndex = 13;
+            this.settingsPictureBox.TabStop = false;
+            // 
+            // logoutPictureBox
+            // 
+            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
+            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutPictureBox.TabIndex = 11;
+            this.logoutPictureBox.TabStop = false;
+            // 
+            // dashboardPictureBox
+            // 
+            this.dashboardPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.dashboard_white;
+            this.dashboardPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.dashboardPictureBox.Name = "dashboardPictureBox";
+            this.dashboardPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dashboardPictureBox.TabIndex = 1;
+            this.dashboardPictureBox.TabStop = false;
+            // 
+            // logoPictureBox
+            // 
+            this.logoPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.Quick_Start_Finance_logo;
+            this.logoPictureBox.Location = new System.Drawing.Point(8, 8);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(208, 48);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPictureBox.TabIndex = 0;
+            this.logoPictureBox.TabStop = false;
+            // 
+            // exitPanel
+            // 
+            this.exitPanel.Controls.Add(this.exitPictureBox);
+            this.exitPanel.Controls.Add(this.exitLabel);
+            this.exitPanel.Location = new System.Drawing.Point(0, 744);
+            this.exitPanel.Name = "exitPanel";
+            this.exitPanel.Size = new System.Drawing.Size(224, 48);
+            this.exitPanel.TabIndex = 18;
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white;
+            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 11;
+            this.exitPictureBox.TabStop = false;
+            // 
+            // exitLabel
+            // 
+            this.exitLabel.AutoSize = true;
+            this.exitLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.exitLabel.ForeColor = System.Drawing.Color.White;
+            this.exitLabel.Location = new System.Drawing.Point(56, 16);
+            this.exitLabel.Name = "exitLabel";
+            this.exitLabel.Size = new System.Drawing.Size(48, 25);
+            this.exitLabel.TabIndex = 12;
+            this.exitLabel.Text = "Exit";
+            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
@@ -828,14 +864,6 @@
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Form1";
             this.navPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.dashboardPanel.ResumeLayout(false);
             this.dashboardPanel.PerformLayout();
             this.incomePanel.ResumeLayout(false);
@@ -872,6 +900,17 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            this.exitPanel.ResumeLayout(false);
+            this.exitPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

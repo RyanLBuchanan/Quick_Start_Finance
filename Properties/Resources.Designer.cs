@@ -83,6 +83,16 @@ namespace Quick_Start_Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap exit_white {
+            get {
+                object obj = ResourceManager.GetObject("exit-white", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap expense_gray {
             get {
                 object obj = ResourceManager.GetObject("expense-gray", resourceCulture);
