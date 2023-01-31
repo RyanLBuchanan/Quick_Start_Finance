@@ -217,9 +217,9 @@
             this.incomeLabel.ForeColor = System.Drawing.Color.White;
             this.incomeLabel.Location = new System.Drawing.Point(56, 16);
             this.incomeLabel.Name = "incomeLabel";
-            this.incomeLabel.Size = new System.Drawing.Size(81, 25);
+            this.incomeLabel.Size = new System.Drawing.Size(116, 25);
             this.incomeLabel.TabIndex = 4;
-            this.incomeLabel.Text = "Income";
+            this.incomeLabel.Text = "My Income";
             // 
             // viewExpensePanel
             // 
@@ -237,9 +237,9 @@
             this.viewExpenseLabel.ForeColor = System.Drawing.Color.White;
             this.viewExpenseLabel.Location = new System.Drawing.Point(56, 16);
             this.viewExpenseLabel.Name = "viewExpenseLabel";
-            this.viewExpenseLabel.Size = new System.Drawing.Size(148, 25);
+            this.viewExpenseLabel.Size = new System.Drawing.Size(159, 25);
             this.viewExpenseLabel.TabIndex = 10;
-            this.viewExpenseLabel.Text = "View Expense";
+            this.viewExpenseLabel.Text = "View Expenses";
             // 
             // logoutLabel
             // 
@@ -288,9 +288,9 @@
             this.expenseLabel.ForeColor = System.Drawing.Color.White;
             this.expenseLabel.Location = new System.Drawing.Point(56, 16);
             this.expenseLabel.Name = "expenseLabel";
-            this.expenseLabel.Size = new System.Drawing.Size(96, 25);
+            this.expenseLabel.Size = new System.Drawing.Size(142, 25);
             this.expenseLabel.TabIndex = 6;
-            this.expenseLabel.Text = "Expense";
+            this.expenseLabel.Text = "My Expenses";
             // 
             // logoutPanel
             // 
@@ -338,21 +338,21 @@
             this.dashboardLabel.ForeColor = System.Drawing.Color.White;
             this.dashboardLabel.Location = new System.Drawing.Point(56, 16);
             this.dashboardLabel.Name = "dashboardLabel";
-            this.dashboardLabel.Size = new System.Drawing.Size(117, 25);
+            this.dashboardLabel.Size = new System.Drawing.Size(136, 25);
             this.dashboardLabel.TabIndex = 2;
-            this.dashboardLabel.Text = "Dashboard";
+            this.dashboardLabel.Text = "My Overview";
             // 
             // personalFinanceDashboardLabel
             // 
             this.personalFinanceDashboardLabel.AutoSize = true;
             this.personalFinanceDashboardLabel.BackColor = System.Drawing.Color.White;
             this.personalFinanceDashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personalFinanceDashboardLabel.ForeColor = System.Drawing.Color.Gray;
+            this.personalFinanceDashboardLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
             this.personalFinanceDashboardLabel.Location = new System.Drawing.Point(274, 24);
             this.personalFinanceDashboardLabel.Name = "personalFinanceDashboardLabel";
-            this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(470, 42);
+            this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(366, 42);
             this.personalFinanceDashboardLabel.TabIndex = 16;
-            this.personalFinanceDashboardLabel.Text = "Personal Income Records";
+            this.personalFinanceDashboardLabel.Text = "My Income Records";
             // 
             // navPanel
             // 
@@ -387,11 +387,11 @@
             // label12
             // 
             this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(8, 88);
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.Yellow;
+            this.label12.Location = new System.Drawing.Point(24, 80);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 25);
+            this.label12.Size = new System.Drawing.Size(198, 25);
             this.label12.TabIndex = 4;
             this.label12.Text = "Amount in Dollars";
             // 
@@ -402,7 +402,7 @@
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(824, 56);
             this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(248, 128);
+            this.panel4.Size = new System.Drawing.Size(248, 112);
             this.panel4.TabIndex = 23;
             // 
             // textBox1
@@ -448,7 +448,7 @@
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label3.Location = new System.Drawing.Point(280, 296);
+            this.label3.Location = new System.Drawing.Point(280, 304);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(305, 50);
             this.label3.TabIndex = 27;

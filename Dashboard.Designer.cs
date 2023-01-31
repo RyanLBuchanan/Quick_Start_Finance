@@ -296,9 +296,9 @@
             this.viewExpenseLabel.ForeColor = System.Drawing.Color.White;
             this.viewExpenseLabel.Location = new System.Drawing.Point(56, 16);
             this.viewExpenseLabel.Name = "viewExpenseLabel";
-            this.viewExpenseLabel.Size = new System.Drawing.Size(165, 25);
+            this.viewExpenseLabel.Size = new System.Drawing.Size(159, 25);
             this.viewExpenseLabel.TabIndex = 10;
-            this.viewExpenseLabel.Text = " View Expenses";
+            this.viewExpenseLabel.Text = "View Expenses";
             // 
             // settingsPanel
             // 
@@ -390,9 +390,9 @@
             this.dashboardLabel.ForeColor = System.Drawing.Color.White;
             this.dashboardLabel.Location = new System.Drawing.Point(56, 16);
             this.dashboardLabel.Name = "dashboardLabel";
-            this.dashboardLabel.Size = new System.Drawing.Size(101, 25);
+            this.dashboardLabel.Size = new System.Drawing.Size(136, 25);
             this.dashboardLabel.TabIndex = 2;
-            this.dashboardLabel.Text = "Overview";
+            this.dashboardLabel.Text = "My Overview";
             // 
             // logoPictureBox
             // 
