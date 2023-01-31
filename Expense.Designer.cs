@@ -1,6 +1,6 @@
 ﻿namespace Quick_Start_Finance
 {
-    partial class Income
+    partial class Expense
     {
         /// <summary>
         /// Required designer variable.
@@ -28,17 +28,27 @@
         /// </summary>
         private void InitializeComponent()
         {
+            this.label13 = new System.Windows.Forms.Label();
             this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
-            this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
-            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
-            this.expensePictureBox = new System.Windows.Forms.PictureBox();
-            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
-            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.exitLabel = new System.Windows.Forms.Label();
-            this.exitPanel = new System.Windows.Forms.Panel();
+            this.label12 = new System.Windows.Forms.Label();
+            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.incomePictureBox = new System.Windows.Forms.PictureBox();
+            this.saveButton = new System.Windows.Forms.Button();
+            this.expensePictureBox = new System.Windows.Forms.PictureBox();
+            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
+            this.label5 = new System.Windows.Forms.Label();
+            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
+            this.label4 = new System.Windows.Forms.Label();
+            this.categoryComboBox = new System.Windows.Forms.ComboBox();
+            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
+            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
+            this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.panel4 = new System.Windows.Forms.Panel();
+            this.exitPanel = new System.Windows.Forms.Panel();
             this.incomePanel = new System.Windows.Forms.Panel();
             this.incomeLabel = new System.Windows.Forms.Label();
             this.viewExpensePanel = new System.Windows.Forms.Panel();
@@ -53,32 +63,23 @@
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.dashboardPanel = new System.Windows.Forms.Panel();
             this.dashboardLabel = new System.Windows.Forms.Label();
-            this.personalFinanceDashboardLabel = new System.Windows.Forms.Label();
-            this.navPanel = new System.Windows.Forms.Panel();
-            this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.textBox2 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
-            this.label5 = new System.Windows.Forms.Label();
-            this.saveButton = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.textBox1 = new System.Windows.Forms.TextBox();
+            this.personalFinanceDashboardLabel = new System.Windows.Forms.Label();
+            this.navPanel = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
-            this.exitPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            this.panel4.SuspendLayout();
+            this.exitPanel.SuspendLayout();
             this.incomePanel.SuspendLayout();
             this.viewExpensePanel.SuspendLayout();
             this.viewIncomePanel.SuspendLayout();
@@ -87,8 +88,18 @@
             this.settingsPanel.SuspendLayout();
             this.dashboardPanel.SuspendLayout();
             this.navPanel.SuspendLayout();
-            this.panel4.SuspendLayout();
             this.SuspendLayout();
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label13.ForeColor = System.Drawing.Color.Black;
+            this.label13.Location = new System.Drawing.Point(8, 16);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(113, 20);
+            this.label13.TabIndex = 3;
+            this.label13.Text = "Total Income";
             // 
             // dashboardPictureBox
             // 
@@ -99,76 +110,6 @@
             this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dashboardPictureBox.TabIndex = 1;
             this.dashboardPictureBox.TabStop = false;
-            // 
-            // logoPictureBox
-            // 
-            this.logoPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.Quick_Start_Finance_logo;
-            this.logoPictureBox.Location = new System.Drawing.Point(8, 8);
-            this.logoPictureBox.Name = "logoPictureBox";
-            this.logoPictureBox.Size = new System.Drawing.Size(208, 48);
-            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoPictureBox.TabIndex = 0;
-            this.logoPictureBox.TabStop = false;
-            // 
-            // logoutPictureBox
-            // 
-            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
-            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoutPictureBox.TabIndex = 11;
-            this.logoutPictureBox.TabStop = false;
-            // 
-            // settingsPictureBox
-            // 
-            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
-            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.settingsPictureBox.Name = "settingsPictureBox";
-            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.settingsPictureBox.TabIndex = 13;
-            this.settingsPictureBox.TabStop = false;
-            // 
-            // viewExpensePictureBox
-            // 
-            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
-            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
-            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewExpensePictureBox.TabIndex = 9;
-            this.viewExpensePictureBox.TabStop = false;
-            // 
-            // expensePictureBox
-            // 
-            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
-            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.expensePictureBox.Name = "expensePictureBox";
-            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.expensePictureBox.TabIndex = 5;
-            this.expensePictureBox.TabStop = false;
-            // 
-            // viewIncomePictureBox
-            // 
-            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
-            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
-            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewIncomePictureBox.TabIndex = 7;
-            this.viewIncomePictureBox.TabStop = false;
-            // 
-            // exitPictureBox
-            // 
-            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white1;
-            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exitPictureBox.TabIndex = 11;
-            this.exitPictureBox.TabStop = false;
             // 
             // exitLabel
             // 
@@ -181,14 +122,26 @@
             this.exitLabel.TabIndex = 12;
             this.exitLabel.Text = "Exit";
             // 
-            // exitPanel
+            // label12
             // 
-            this.exitPanel.Controls.Add(this.exitPictureBox);
-            this.exitPanel.Controls.Add(this.exitLabel);
-            this.exitPanel.Location = new System.Drawing.Point(0, 696);
-            this.exitPanel.Name = "exitPanel";
-            this.exitPanel.Size = new System.Drawing.Size(224, 48);
-            this.exitPanel.TabIndex = 18;
+            this.label12.AutoSize = true;
+            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label12.ForeColor = System.Drawing.Color.White;
+            this.label12.Location = new System.Drawing.Point(8, 56);
+            this.label12.Name = "label12";
+            this.label12.Size = new System.Drawing.Size(181, 25);
+            this.label12.TabIndex = 4;
+            this.label12.Text = "Amount in Dollars";
+            // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white1;
+            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 11;
+            this.exitPictureBox.TabStop = false;
             // 
             // incomePictureBox
             // 
@@ -199,6 +152,158 @@
             this.incomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.incomePictureBox.TabIndex = 3;
             this.incomePictureBox.TabStop = false;
+            // 
+            // saveButton
+            // 
+            this.saveButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.saveButton.ForeColor = System.Drawing.Color.White;
+            this.saveButton.Location = new System.Drawing.Point(488, 600);
+            this.saveButton.Name = "saveButton";
+            this.saveButton.Size = new System.Drawing.Size(96, 40);
+            this.saveButton.TabIndex = 47;
+            this.saveButton.Text = "SAVE";
+            this.saveButton.UseVisualStyleBackColor = false;
+            // 
+            // expensePictureBox
+            // 
+            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
+            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.expensePictureBox.Name = "expensePictureBox";
+            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.expensePictureBox.TabIndex = 5;
+            this.expensePictureBox.TabStop = false;
+            // 
+            // viewExpensePictureBox
+            // 
+            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
+            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
+            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewExpensePictureBox.TabIndex = 9;
+            this.viewExpensePictureBox.TabStop = false;
+            // 
+            // label5
+            // 
+            this.label5.AutoSize = true;
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label5.Location = new System.Drawing.Point(576, 192);
+            this.label5.Name = "label5";
+            this.label5.Size = new System.Drawing.Size(48, 20);
+            this.label5.TabIndex = 46;
+            this.label5.Text = "Date";
+            // 
+            // dateTimePicker1
+            // 
+            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.dateTimePicker1.Location = new System.Drawing.Point(576, 216);
+            this.dateTimePicker1.Name = "dateTimePicker1";
+            this.dateTimePicker1.Size = new System.Drawing.Size(216, 31);
+            this.dateTimePicker1.TabIndex = 45;
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.Location = new System.Drawing.Point(576, 104);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(81, 20);
+            this.label4.TabIndex = 44;
+            this.label4.Text = "Category";
+            // 
+            // categoryComboBox
+            // 
+            this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.categoryComboBox.FormattingEnabled = true;
+            this.categoryComboBox.Location = new System.Drawing.Point(576, 128);
+            this.categoryComboBox.Name = "categoryComboBox";
+            this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
+            this.categoryComboBox.TabIndex = 43;
+            // 
+            // settingsPictureBox
+            // 
+            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
+            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.settingsPictureBox.Name = "settingsPictureBox";
+            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsPictureBox.TabIndex = 13;
+            this.settingsPictureBox.TabStop = false;
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label3.Location = new System.Drawing.Point(280, 280);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(100, 20);
+            this.label3.TabIndex = 41;
+            this.label3.Text = "Description";
+            // 
+            // logoutPictureBox
+            // 
+            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
+            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutPictureBox.TabIndex = 11;
+            this.logoutPictureBox.TabStop = false;
+            // 
+            // viewIncomePictureBox
+            // 
+            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
+            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
+            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewIncomePictureBox.TabIndex = 7;
+            this.viewIncomePictureBox.TabStop = false;
+            // 
+            // logoPictureBox
+            // 
+            this.logoPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.Quick_Start_Finance_logo;
+            this.logoPictureBox.Location = new System.Drawing.Point(8, 8);
+            this.logoPictureBox.Name = "logoPictureBox";
+            this.logoPictureBox.Size = new System.Drawing.Size(208, 48);
+            this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoPictureBox.TabIndex = 0;
+            this.logoPictureBox.TabStop = false;
+            // 
+            // textBox3
+            // 
+            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox3.Location = new System.Drawing.Point(280, 304);
+            this.textBox3.Multiline = true;
+            this.textBox3.Name = "textBox3";
+            this.textBox3.Size = new System.Drawing.Size(216, 120);
+            this.textBox3.TabIndex = 42;
+            // 
+            // panel4
+            // 
+            this.panel4.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.label13);
+            this.panel4.Location = new System.Drawing.Point(848, 56);
+            this.panel4.Name = "panel4";
+            this.panel4.Size = new System.Drawing.Size(224, 96);
+            this.panel4.TabIndex = 37;
+            // 
+            // exitPanel
+            // 
+            this.exitPanel.Controls.Add(this.exitPictureBox);
+            this.exitPanel.Controls.Add(this.exitLabel);
+            this.exitPanel.Location = new System.Drawing.Point(0, 696);
+            this.exitPanel.Name = "exitPanel";
+            this.exitPanel.Size = new System.Drawing.Size(224, 48);
+            this.exitPanel.TabIndex = 18;
             // 
             // incomePanel
             // 
@@ -342,6 +447,44 @@
             this.dashboardLabel.TabIndex = 2;
             this.dashboardLabel.Text = "Dashboard";
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.Location = new System.Drawing.Point(280, 192);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(71, 20);
+            this.label2.TabIndex = 39;
+            this.label2.Text = "Amount";
+            // 
+            // textBox2
+            // 
+            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox2.Location = new System.Drawing.Point(280, 216);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.Size = new System.Drawing.Size(216, 31);
+            this.textBox2.TabIndex = 40;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.Location = new System.Drawing.Point(280, 104);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(107, 20);
+            this.label1.TabIndex = 34;
+            this.label1.Text = "Income Title";
+            // 
+            // textBox1
+            // 
+            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.textBox1.Location = new System.Drawing.Point(280, 128);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.Size = new System.Drawing.Size(216, 31);
+            this.textBox1.TabIndex = 38;
+            // 
             // personalFinanceDashboardLabel
             // 
             this.personalFinanceDashboardLabel.AutoSize = true;
@@ -351,7 +494,7 @@
             this.personalFinanceDashboardLabel.Location = new System.Drawing.Point(274, 24);
             this.personalFinanceDashboardLabel.Name = "personalFinanceDashboardLabel";
             this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(349, 31);
-            this.personalFinanceDashboardLabel.TabIndex = 16;
+            this.personalFinanceDashboardLabel.TabIndex = 36;
             this.personalFinanceDashboardLabel.Text = "Personal Income Records";
             // 
             // navPanel
@@ -371,154 +514,11 @@
             this.navPanel.Location = new System.Drawing.Point(0, 0);
             this.navPanel.Name = "navPanel";
             this.navPanel.Size = new System.Drawing.Size(224, 800);
-            this.navPanel.TabIndex = 15;
+            this.navPanel.TabIndex = 35;
             // 
-            // label13
+            // Expense
             // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(8, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(183, 58);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "All My Money\r\n(Total Income)";
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.White;
-            this.label12.Location = new System.Drawing.Point(8, 88);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(181, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Amount in Dollars";
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(824, 56);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(248, 128);
-            this.panel4.TabIndex = 23;
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(280, 128);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 31);
-            this.textBox1.TabIndex = 24;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label1.Location = new System.Drawing.Point(280, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 40);
-            this.label1.TabIndex = 5;
-            this.label1.Text = "What Came In\r\n(Income)";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(280, 168);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 40);
-            this.label2.TabIndex = 25;
-            this.label2.Text = "How Much Did I Get?\r\n(Amount)";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(280, 216);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 31);
-            this.textBox2.TabIndex = 26;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label3.Location = new System.Drawing.Point(280, 256);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 40);
-            this.label3.TabIndex = 27;
-            this.label3.Text = "More About My New Income\r\n(Description)";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(280, 304);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 120);
-            this.textBox3.TabIndex = 28;
-            // 
-            // categoryComboBox
-            // 
-            this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(576, 128);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
-            this.categoryComboBox.TabIndex = 29;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label4.Location = new System.Drawing.Point(576, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 40);
-            this.label4.TabIndex = 30;
-            this.label4.Text = "What Kind of Income\r\n(Category)";
-            // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(576, 216);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(216, 31);
-            this.dateTimePicker1.TabIndex = 31;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label5.Location = new System.Drawing.Point(576, 168);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 40);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "When I Got It\r\n(Date)";
-            // 
-            // saveButton
-            // 
-            this.saveButton.BackColor = System.Drawing.Color.SteelBlue;
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(550, 600);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(160, 40);
-            this.saveButton.TabIndex = 33;
-            this.saveButton.Text = "KEEP THIS!";
-            this.saveButton.UseVisualStyleBackColor = false;
-            // 
-            // Income
-            // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
@@ -529,30 +529,30 @@
             this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.label3);
             this.Controls.Add(this.textBox3);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.personalFinanceDashboardLabel);
             this.Controls.Add(this.navPanel);
-            this.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
-            this.Margin = new System.Windows.Forms.Padding(4);
-            this.Name = "Income";
+            this.Name = "Expense";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-            this.Text = "Income";
+            this.Text = "Expense";
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.exitPanel.ResumeLayout(false);
             this.exitPanel.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
             this.incomePanel.ResumeLayout(false);
             this.incomePanel.PerformLayout();
             this.viewExpensePanel.ResumeLayout(false);
@@ -568,8 +568,6 @@
             this.dashboardPanel.ResumeLayout(false);
             this.dashboardPanel.PerformLayout();
             this.navPanel.ResumeLayout(false);
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -577,17 +575,27 @@
 
         #endregion
 
+        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.PictureBox dashboardPictureBox;
-        private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.PictureBox logoutPictureBox;
-        private System.Windows.Forms.PictureBox settingsPictureBox;
-        private System.Windows.Forms.PictureBox viewExpensePictureBox;
-        private System.Windows.Forms.PictureBox expensePictureBox;
-        private System.Windows.Forms.PictureBox viewIncomePictureBox;
-        private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.Label exitLabel;
-        private System.Windows.Forms.Panel exitPanel;
+        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.PictureBox incomePictureBox;
+        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.PictureBox expensePictureBox;
+        private System.Windows.Forms.PictureBox viewExpensePictureBox;
+        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.DateTimePicker dateTimePicker1;
+        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.ComboBox categoryComboBox;
+        private System.Windows.Forms.PictureBox settingsPictureBox;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.PictureBox logoutPictureBox;
+        private System.Windows.Forms.PictureBox viewIncomePictureBox;
+        private System.Windows.Forms.PictureBox logoPictureBox;
+        private System.Windows.Forms.TextBox textBox3;
+        private System.Windows.Forms.Panel panel4;
+        private System.Windows.Forms.Panel exitPanel;
         private System.Windows.Forms.Panel incomePanel;
         private System.Windows.Forms.Label incomeLabel;
         private System.Windows.Forms.Panel viewExpensePanel;
@@ -602,21 +610,11 @@
         private System.Windows.Forms.Panel settingsPanel;
         private System.Windows.Forms.Panel dashboardPanel;
         private System.Windows.Forms.Label dashboardLabel;
-        private System.Windows.Forms.Label personalFinanceDashboardLabel;
-        private System.Windows.Forms.Panel navPanel;
-        private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.TextBox textBox1;
-        private System.Windows.Forms.Label label1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.TextBox textBox2;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.ComboBox categoryComboBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
-        private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.Button saveButton;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.Label personalFinanceDashboardLabel;
+        private System.Windows.Forms.Panel navPanel;
     }
 }
