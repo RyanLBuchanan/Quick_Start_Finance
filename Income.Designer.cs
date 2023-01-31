@@ -420,9 +420,9 @@
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(280, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 50);
+            this.label1.Size = new System.Drawing.Size(231, 50);
             this.label1.TabIndex = 5;
-            this.label1.Text = "What Came In\r\n(Income)";
+            this.label1.Text = "What money came in\r\n(Income)";
             // 
             // label2
             // 
@@ -431,9 +431,9 @@
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
             this.label2.Location = new System.Drawing.Point(280, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 50);
+            this.label2.Size = new System.Drawing.Size(173, 50);
             this.label2.TabIndex = 25;
-            this.label2.Text = "How Much Did I Get?\r\n(Amount)";
+            this.label2.Text = "How much I got\r\n(Amount)";
             // 
             // textBox2
             // 
@@ -450,9 +450,9 @@
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
             this.label3.Location = new System.Drawing.Point(280, 304);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(305, 50);
+            this.label3.Size = new System.Drawing.Size(299, 50);
             this.label3.TabIndex = 27;
-            this.label3.Text = "More About My New Income\r\n(Description)";
+            this.label3.Text = "More about my new income\r\n(Description)";
             // 
             // textBox3
             // 
@@ -479,9 +479,9 @@
             this.label4.ForeColor = System.Drawing.Color.SteelBlue;
             this.label4.Location = new System.Drawing.Point(576, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 50);
+            this.label4.Size = new System.Drawing.Size(226, 50);
             this.label4.TabIndex = 30;
-            this.label4.Text = "What Kind of Income\r\n(Category)";
+            this.label4.Text = "What kind of income\r\n(Category)";
             // 
             // dateTimePicker1
             // 
@@ -499,9 +499,9 @@
             this.label5.ForeColor = System.Drawing.Color.SteelBlue;
             this.label5.Location = new System.Drawing.Point(576, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 50);
+            this.label5.Size = new System.Drawing.Size(145, 50);
             this.label5.TabIndex = 32;
-            this.label5.Text = "When I Got It\r\n(Date)";
+            this.label5.Text = "When I got it\r\n(Date)";
             // 
             // saveButton
             // 

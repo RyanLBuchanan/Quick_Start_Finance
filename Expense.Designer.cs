@@ -334,9 +334,9 @@
             this.label4.ForeColor = System.Drawing.Color.SteelBlue;
             this.label4.Location = new System.Drawing.Point(570, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(229, 50);
+            this.label4.Size = new System.Drawing.Size(240, 50);
             this.label4.TabIndex = 44;
-            this.label4.Text = "What Kind of Income\r\n(Category)";
+            this.label4.Text = "What kind of expense\r\n(Category)";
             // 
             // categoryComboBox
             // 
@@ -354,9 +354,9 @@
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
             this.label3.Location = new System.Drawing.Point(274, 304);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(305, 50);
+            this.label3.Size = new System.Drawing.Size(313, 50);
             this.label3.TabIndex = 41;
-            this.label3.Text = "More About My New Income\r\n(Description)";
+            this.label3.Text = "More about my new expense\r\n(Description)";
             // 
             // textBox3
             // 
@@ -374,9 +374,9 @@
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
             this.label2.Location = new System.Drawing.Point(274, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(233, 50);
+            this.label2.Size = new System.Drawing.Size(198, 50);
             this.label2.TabIndex = 39;
-            this.label2.Text = "How Much Did I Get?\r\n(Amount)";
+            this.label2.Text = "How much I spent\r\n(Amount)";
             // 
             // textBox2
             // 
@@ -393,9 +393,9 @@
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(274, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(159, 50);
+            this.label1.Size = new System.Drawing.Size(253, 50);
             this.label1.TabIndex = 34;
-            this.label1.Text = "What Came In\r\n(Income)";
+            this.label1.Text = "What I spent money on\r\n(Expense)";
             // 
             // textBox1
             // 
@@ -513,9 +513,9 @@
             this.label5.ForeColor = System.Drawing.Color.SteelBlue;
             this.label5.Location = new System.Drawing.Point(570, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(149, 50);
+            this.label5.Size = new System.Drawing.Size(170, 50);
             this.label5.TabIndex = 46;
-            this.label5.Text = "When I Got It\r\n(Date)";
+            this.label5.Text = "When I spent it\r\n(Date)";
             // 
             // Expense
             // 
