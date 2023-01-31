@@ -11,3 +11,4 @@ C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.pdb
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.Income.resources
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.Expense.resources
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.ViewIncome.resources
