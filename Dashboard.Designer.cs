@@ -459,9 +459,9 @@
             this.transactionsLabel.ForeColor = System.Drawing.Color.White;
             this.transactionsLabel.Location = new System.Drawing.Point(8, 112);
             this.transactionsLabel.Name = "transactionsLabel";
-            this.transactionsLabel.Size = new System.Drawing.Size(273, 50);
+            this.transactionsLabel.Size = new System.Drawing.Size(285, 50);
             this.transactionsLabel.TabIndex = 5;
-            this.transactionsLabel.Text = "Stuff that give me money\r\n(Transactions)";
+            this.transactionsLabel.Text = "Stuff that gives me money\r\n(Transactions)";
             // 
             // amountInDollarsLabel
             // 

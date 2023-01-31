@@ -346,11 +346,11 @@
             // 
             this.personalFinanceDashboardLabel.AutoSize = true;
             this.personalFinanceDashboardLabel.BackColor = System.Drawing.Color.White;
-            this.personalFinanceDashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 20.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.personalFinanceDashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.personalFinanceDashboardLabel.ForeColor = System.Drawing.Color.Gray;
             this.personalFinanceDashboardLabel.Location = new System.Drawing.Point(274, 24);
             this.personalFinanceDashboardLabel.Name = "personalFinanceDashboardLabel";
-            this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(349, 31);
+            this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(470, 42);
             this.personalFinanceDashboardLabel.TabIndex = 16;
             this.personalFinanceDashboardLabel.Text = "Personal Income Records";
             // 
@@ -408,7 +408,7 @@
             // textBox1
             // 
             this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(280, 128);
+            this.textBox1.Location = new System.Drawing.Point(280, 136);
             this.textBox1.Name = "textBox1";
             this.textBox1.Size = new System.Drawing.Size(232, 31);
             this.textBox1.TabIndex = 24;
@@ -416,29 +416,29 @@
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label1.ForeColor = System.Drawing.Color.SteelBlue;
             this.label1.Location = new System.Drawing.Point(280, 80);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(123, 40);
+            this.label1.Size = new System.Drawing.Size(159, 50);
             this.label1.TabIndex = 5;
             this.label1.Text = "What Came In\r\n(Income)";
             // 
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label2.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label2.Location = new System.Drawing.Point(280, 168);
+            this.label2.Location = new System.Drawing.Point(280, 184);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(180, 40);
+            this.label2.Size = new System.Drawing.Size(233, 50);
             this.label2.TabIndex = 25;
             this.label2.Text = "How Much Did I Get?\r\n(Amount)";
             // 
             // textBox2
             // 
             this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(280, 216);
+            this.textBox2.Location = new System.Drawing.Point(280, 240);
             this.textBox2.Name = "textBox2";
             this.textBox2.Size = new System.Drawing.Size(232, 31);
             this.textBox2.TabIndex = 26;
@@ -446,28 +446,28 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label3.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label3.Location = new System.Drawing.Point(280, 256);
+            this.label3.Location = new System.Drawing.Point(280, 296);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(232, 40);
+            this.label3.Size = new System.Drawing.Size(305, 50);
             this.label3.TabIndex = 27;
             this.label3.Text = "More About My New Income\r\n(Description)";
             // 
             // textBox3
             // 
             this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(280, 304);
+            this.textBox3.Location = new System.Drawing.Point(280, 360);
             this.textBox3.Multiline = true;
             this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(232, 120);
+            this.textBox3.Size = new System.Drawing.Size(304, 120);
             this.textBox3.TabIndex = 28;
             // 
             // categoryComboBox
             // 
             this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(576, 128);
+            this.categoryComboBox.Location = new System.Drawing.Point(576, 136);
             this.categoryComboBox.Name = "categoryComboBox";
             this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
             this.categoryComboBox.TabIndex = 29;
@@ -475,11 +475,11 @@
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.ForeColor = System.Drawing.Color.SteelBlue;
             this.label4.Location = new System.Drawing.Point(576, 80);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(176, 40);
+            this.label4.Size = new System.Drawing.Size(229, 50);
             this.label4.TabIndex = 30;
             this.label4.Text = "What Kind of Income\r\n(Category)";
             // 
@@ -487,7 +487,7 @@
             // 
             this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(576, 216);
+            this.dateTimePicker1.Location = new System.Drawing.Point(576, 240);
             this.dateTimePicker1.Name = "dateTimePicker1";
             this.dateTimePicker1.Size = new System.Drawing.Size(216, 31);
             this.dateTimePicker1.TabIndex = 31;
@@ -495,11 +495,11 @@
             // label5
             // 
             this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label5.ForeColor = System.Drawing.Color.SteelBlue;
-            this.label5.Location = new System.Drawing.Point(576, 168);
+            this.label5.Location = new System.Drawing.Point(576, 184);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(118, 40);
+            this.label5.Size = new System.Drawing.Size(149, 50);
             this.label5.TabIndex = 32;
             this.label5.Text = "When I Got It\r\n(Date)";
             // 
