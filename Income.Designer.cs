@@ -112,7 +112,7 @@
             // 
             // incomePanel
             // 
-            this.incomePanel.BackColor = System.Drawing.Color.SteelBlue;
+            this.incomePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.incomePanel.Controls.Add(this.incomePictureBox);
             this.incomePanel.Controls.Add(this.incomeLabel);
             this.incomePanel.Location = new System.Drawing.Point(0, 152);
@@ -233,7 +233,7 @@
             // 
             // dashboardPanel
             // 
-            this.dashboardPanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.dashboardPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
             this.dashboardPanel.Controls.Add(this.dashboardPictureBox);
             this.dashboardPanel.Controls.Add(this.dashboardLabel);
             this.dashboardPanel.Location = new System.Drawing.Point(0, 104);
@@ -257,7 +257,7 @@
             this.personalFinanceDashboardLabel.AutoSize = true;
             this.personalFinanceDashboardLabel.BackColor = System.Drawing.Color.White;
             this.personalFinanceDashboardLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 27.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.personalFinanceDashboardLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.personalFinanceDashboardLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(186)))), ((int)(((byte)(84)))));
             this.personalFinanceDashboardLabel.Location = new System.Drawing.Point(274, 24);
             this.personalFinanceDashboardLabel.Name = "personalFinanceDashboardLabel";
             this.personalFinanceDashboardLabel.Size = new System.Drawing.Size(366, 42);
@@ -266,7 +266,7 @@
             // 
             // navPanel
             // 
-            this.navPanel.BackColor = System.Drawing.Color.LightSteelBlue;
+            this.navPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
             this.navPanel.Controls.Add(this.exitPanel);
             this.navPanel.Controls.Add(this.incomePanel);
             this.navPanel.Controls.Add(this.viewIncomePanel);
@@ -298,7 +298,7 @@
             // 
             this.label12.AutoSize = true;
             this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.Yellow;
+            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
             this.label12.Location = new System.Drawing.Point(24, 80);
             this.label12.Name = "label12";
             this.label12.Size = new System.Drawing.Size(198, 25);
@@ -307,7 +307,7 @@
             // 
             // panel4
             // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(0)))), ((int)(((byte)(192)))), ((int)(((byte)(0)))));
+            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(186)))), ((int)(((byte)(84)))));
             this.panel4.Controls.Add(this.label12);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(824, 56);
@@ -327,7 +327,7 @@
             // 
             this.label1.AutoSize = true;
             this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.label1.Location = new System.Drawing.Point(280, 80);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 50);
@@ -338,7 +338,7 @@
             // 
             this.label2.AutoSize = true;
             this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.label2.Location = new System.Drawing.Point(280, 184);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(173, 50);
@@ -357,7 +357,7 @@
             // 
             this.label3.AutoSize = true;
             this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.label3.Location = new System.Drawing.Point(280, 304);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(299, 50);
@@ -386,7 +386,7 @@
             // 
             this.label4.AutoSize = true;
             this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.label4.Location = new System.Drawing.Point(576, 80);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(226, 50);
@@ -406,7 +406,7 @@
             // 
             this.label5.AutoSize = true;
             this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.SteelBlue;
+            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.label5.Location = new System.Drawing.Point(576, 184);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(145, 50);
@@ -415,7 +415,7 @@
             // 
             // saveButton
             // 
-            this.saveButton.BackColor = System.Drawing.Color.SteelBlue;
+            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
             this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
             this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.saveButton.ForeColor = System.Drawing.Color.White;
