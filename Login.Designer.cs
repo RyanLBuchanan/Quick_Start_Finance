@@ -90,6 +90,7 @@
             this.loginButton.TabIndex = 48;
             this.loginButton.Text = "Login";
             this.loginButton.UseVisualStyleBackColor = false;
+            this.loginButton.Click += new System.EventHandler(this.loginButton_Click);
             // 
             // logoPictureBox
             // 
@@ -114,7 +115,7 @@
             // registerLabel
             // 
             this.registerLabel.AutoSize = true;
-            this.registerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.registerLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.registerLabel.ForeColor = System.Drawing.Color.Black;
             this.registerLabel.Location = new System.Drawing.Point(200, 656);
             this.registerLabel.Name = "registerLabel";
