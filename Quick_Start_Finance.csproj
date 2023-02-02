@@ -198,5 +198,11 @@
   <ItemGroup>
     <None Include="Resources\exit-white1.png" />
   </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-x-google-blue.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\close-xbox-google-blue.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

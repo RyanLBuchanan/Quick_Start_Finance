@@ -63,6 +63,26 @@ namespace Quick_Start_Finance.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap close_x_google_blue {
+            get {
+                object obj = ResourceManager.GetObject("close-x-google-blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap close_xbox_google_blue {
+            get {
+                object obj = ResourceManager.GetObject("close-xbox-google-blue", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap dashboard_gray {
             get {
                 object obj = ResourceManager.GetObject("dashboard-gray", resourceCulture);

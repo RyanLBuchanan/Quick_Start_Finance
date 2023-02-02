@@ -16,5 +16,11 @@ namespace Quick_Start_Finance
         {
             InitializeComponent();
         }
+
+        private void registerLabel_Click(object sender, EventArgs e)
+        {
+            Users users = new Users();
+            users.Show();
+        }
     }
 }
