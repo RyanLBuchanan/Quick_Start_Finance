@@ -14,3 +14,5 @@ C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.ViewIncome.resources
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\bin\Debug\Guna.UI2.dll
 C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.csproj.CopyComplete
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.Login.resources
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.ViewExpense.resources
