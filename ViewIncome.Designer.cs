@@ -29,28 +29,18 @@
         private void InitializeComponent()
         {
             this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
-            this.saveButton = new System.Windows.Forms.Button();
             this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.incomePictureBox = new System.Windows.Forms.PictureBox();
             this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
-            this.label5 = new System.Windows.Forms.Label();
             this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
             this.settingsPictureBox = new System.Windows.Forms.PictureBox();
             this.logoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.dateTimePicker1 = new System.Windows.Forms.DateTimePicker();
             this.label4 = new System.Windows.Forms.Label();
             this.categoryComboBox = new System.Windows.Forms.ComboBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.textBox3 = new System.Windows.Forms.TextBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.textBox2 = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.expensePictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.panel4 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
-            this.label13 = new System.Windows.Forms.Label();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPanel = new System.Windows.Forms.Panel();
             this.incomePanel = new System.Windows.Forms.Panel();
@@ -78,7 +68,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            this.panel4.SuspendLayout();
             this.exitPanel.SuspendLayout();
             this.incomePanel.SuspendLayout();
             this.viewIncomePanel.SuspendLayout();
@@ -99,19 +88,6 @@
             this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.dashboardPictureBox.TabIndex = 1;
             this.dashboardPictureBox.TabStop = false;
-            // 
-            // saveButton
-            // 
-            this.saveButton.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.saveButton.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.saveButton.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.saveButton.ForeColor = System.Drawing.Color.White;
-            this.saveButton.Location = new System.Drawing.Point(544, 600);
-            this.saveButton.Name = "saveButton";
-            this.saveButton.Size = new System.Drawing.Size(160, 40);
-            this.saveButton.TabIndex = 47;
-            this.saveButton.Text = "KEEP THIS!";
-            this.saveButton.UseVisualStyleBackColor = false;
             // 
             // exitPictureBox
             // 
@@ -143,17 +119,6 @@
             this.viewIncomePictureBox.TabIndex = 7;
             this.viewIncomePictureBox.TabStop = false;
             // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label5.Location = new System.Drawing.Point(570, 184);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(145, 50);
-            this.label5.TabIndex = 46;
-            this.label5.Text = "When I got it\r\n(Date)";
-            // 
             // viewExpensePictureBox
             // 
             this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
@@ -184,15 +149,6 @@
             this.logoutPictureBox.TabIndex = 11;
             this.logoutPictureBox.TabStop = false;
             // 
-            // dateTimePicker1
-            // 
-            this.dateTimePicker1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.dateTimePicker1.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.dateTimePicker1.Location = new System.Drawing.Point(570, 240);
-            this.dateTimePicker1.Name = "dateTimePicker1";
-            this.dateTimePicker1.Size = new System.Drawing.Size(216, 31);
-            this.dateTimePicker1.TabIndex = 45;
-            // 
             // label4
             // 
             this.label4.AutoSize = true;
@@ -213,45 +169,6 @@
             this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
             this.categoryComboBox.TabIndex = 43;
             // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label3.Location = new System.Drawing.Point(274, 304);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(299, 50);
-            this.label3.TabIndex = 41;
-            this.label3.Text = "More about my new income\r\n(Description)";
-            // 
-            // textBox3
-            // 
-            this.textBox3.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox3.Location = new System.Drawing.Point(274, 360);
-            this.textBox3.Multiline = true;
-            this.textBox3.Name = "textBox3";
-            this.textBox3.Size = new System.Drawing.Size(304, 120);
-            this.textBox3.TabIndex = 42;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label2.Location = new System.Drawing.Point(274, 184);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(173, 50);
-            this.label2.TabIndex = 39;
-            this.label2.Text = "How much I got\r\n(Amount)";
-            // 
-            // textBox2
-            // 
-            this.textBox2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox2.Location = new System.Drawing.Point(274, 240);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.Size = new System.Drawing.Size(232, 31);
-            this.textBox2.TabIndex = 40;
-            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -261,7 +178,7 @@
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(231, 50);
             this.label1.TabIndex = 34;
-            this.label1.Text = "What money came in\r\n(Income)";
+            this.label1.Text = "What money came in\r\n(Income Title)";
             // 
             // textBox1
             // 
@@ -290,38 +207,6 @@
             this.logoPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
-            // 
-            // panel4
-            // 
-            this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(186)))), ((int)(((byte)(84)))));
-            this.panel4.Controls.Add(this.label12);
-            this.panel4.Controls.Add(this.label13);
-            this.panel4.Location = new System.Drawing.Point(818, 56);
-            this.panel4.Name = "panel4";
-            this.panel4.Size = new System.Drawing.Size(248, 112);
-            this.panel4.TabIndex = 37;
-            // 
-            // label12
-            // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label12.Location = new System.Drawing.Point(24, 80);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(198, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Amount in Dollars";
-            // 
-            // label13
-            // 
-            this.label13.AutoSize = true;
-            this.label13.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label13.ForeColor = System.Drawing.Color.White;
-            this.label13.Location = new System.Drawing.Point(8, 8);
-            this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(183, 58);
-            this.label13.TabIndex = 3;
-            this.label13.Text = "All My Money\r\n(Total Income)";
             // 
             // exitLabel
             // 
@@ -523,18 +408,10 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
-            this.Controls.Add(this.saveButton);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.dateTimePicker1);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.categoryComboBox);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.textBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.textBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.textBox1);
-            this.Controls.Add(this.panel4);
             this.Controls.Add(this.personalFinanceDashboardLabel);
             this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -550,8 +427,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            this.panel4.ResumeLayout(false);
-            this.panel4.PerformLayout();
             this.exitPanel.ResumeLayout(false);
             this.exitPanel.PerformLayout();
             this.incomePanel.ResumeLayout(false);
@@ -577,28 +452,18 @@
         #endregion
 
         private System.Windows.Forms.PictureBox dashboardPictureBox;
-        private System.Windows.Forms.Button saveButton;
         private System.Windows.Forms.PictureBox exitPictureBox;
         private System.Windows.Forms.PictureBox incomePictureBox;
         private System.Windows.Forms.PictureBox viewIncomePictureBox;
-        private System.Windows.Forms.Label label5;
         private System.Windows.Forms.PictureBox viewExpensePictureBox;
         private System.Windows.Forms.PictureBox settingsPictureBox;
         private System.Windows.Forms.PictureBox logoutPictureBox;
-        private System.Windows.Forms.DateTimePicker dateTimePicker1;
         private System.Windows.Forms.Label label4;
         private System.Windows.Forms.ComboBox categoryComboBox;
-        private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.TextBox textBox3;
-        private System.Windows.Forms.Label label2;
-        private System.Windows.Forms.TextBox textBox2;
         private System.Windows.Forms.Label label1;
         private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox expensePictureBox;
         private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label12;
-        private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Label exitLabel;
         private System.Windows.Forms.Panel exitPanel;
         private System.Windows.Forms.Panel incomePanel;
