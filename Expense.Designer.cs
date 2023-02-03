@@ -347,15 +347,17 @@
             this.expenseCategoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expenseCategoryComboBox.FormattingEnabled = true;
             this.expenseCategoryComboBox.Items.AddRange(new object[] {
-            "Rent",
-            "Groceries",
-            "Movies",
-            "Gym",
-            "Utilities",
-            "Internet",
             "Computer",
+            "Groceries",
+            "Gym",
+            "Internet",
+            "Medical",
+            "Movies",
+            "Rent",
             "Software",
-            "Transportation"});
+            "Transportation",
+            "Travel",
+            "Utilities"});
             this.expenseCategoryComboBox.Location = new System.Drawing.Point(570, 136);
             this.expenseCategoryComboBox.Name = "expenseCategoryComboBox";
             this.expenseCategoryComboBox.Size = new System.Drawing.Size(216, 33);
