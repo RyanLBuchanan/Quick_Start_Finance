@@ -16,5 +16,12 @@ namespace Quick_Start_Finance
         {
             InitializeComponent();
         }
+
+        private void dashboardLabel_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
     }
 }

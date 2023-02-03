@@ -173,8 +173,8 @@
             // backLabel
             // 
             this.backLabel.AutoSize = true;
-            this.backLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.backLabel.ForeColor = System.Drawing.Color.Black;
+            this.backLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 14.25F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.backLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.backLabel.Location = new System.Drawing.Point(216, 664);
             this.backLabel.Name = "backLabel";
             this.backLabel.Size = new System.Drawing.Size(55, 24);

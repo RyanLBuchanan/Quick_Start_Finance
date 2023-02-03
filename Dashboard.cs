@@ -17,46 +17,74 @@ namespace Quick_Start_Finance
             InitializeComponent();
         }
 
-        private void dashboardPanel_Paint(object sender, PaintEventArgs e)
+        private void incomeLabel_Click(object sender, EventArgs e)
         {
-
-            //logoutPanel.BackColor = Color.SteelBlue; // Active navigation element highlighted
-            //settingsPanel.BackColor = Color.LightSteelBlue; // Active navigation element highlighted
+            Income income = new Income();
+            income.Show();
+            this.Hide();
         }
 
-        private void dashboardPanel_MouseClick(object sender, MouseEventArgs e)
+        private void expenseLabel_Click(object sender, EventArgs e)
         {
-
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
         }
 
-        private void incomePanel_MouseClick(object sender, MouseEventArgs e)
+        private void viewIncomeLabel_Click(object sender, EventArgs e)
         {
-
+            ViewIncome viewIncome = new ViewIncome();
+            viewIncome.Show();
+            this.Hide();
         }
 
-        private void expensePanel_MouseClick(object sender, MouseEventArgs e)
+        private void viewExpenseLabel_Click(object sender, EventArgs e)
         {
-
+            ViewExpense viewExpense = new ViewExpense();
+            viewExpense.Show();
+            this.Hide();
         }
 
-        private void viewIncomePanel_MouseClick(object sender, MouseEventArgs e)
-        {
+        //private void dashboardPanel_Paint(object sender, PaintEventArgs e)
+        //{
 
-        }
+        //    //logoutPanel.BackColor = Color.SteelBlue; // Active navigation element highlighted
+        //    //settingsPanel.BackColor = Color.LightSteelBlue; // Active navigation element highlighted
+        //}
 
-        private void viewExpensePanel_MouseClick(object sender, MouseEventArgs e)
-        {
+        //private void dashboardPanel_MouseClick(object sender, MouseEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void settingsPanel_MouseClick(object sender, MouseEventArgs e)
-        {
+        //private void incomePanel_MouseClick(object sender, MouseEventArgs e)
+        //{
 
-        }
+        //}
 
-        private void logoutPanel_MouseClick(object sender, MouseEventArgs e)
-        {
+        //private void expensePanel_MouseClick(object sender, MouseEventArgs e)
+        //{
 
-        }
+        //}
+
+        //private void viewIncomePanel_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
+
+        //private void viewExpensePanel_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
+
+        //private void settingsPanel_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
+
+        //private void logoutPanel_MouseClick(object sender, MouseEventArgs e)
+        //{
+
+        //}
     }
 }
