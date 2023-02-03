@@ -69,5 +69,17 @@ namespace Quick_Start_Finance
             viewExpense.Show();
             this.Hide();
         }
+
+        private void logoutLabel_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
+
+        private void exitLabel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

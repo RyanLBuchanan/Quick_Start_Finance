@@ -69,7 +69,6 @@
             this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.label5 = new System.Windows.Forms.Label();
-            this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.viewIncomePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
             this.expensePanel.SuspendLayout();
@@ -89,7 +88,6 @@
             this.dashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // viewIncomePanel
@@ -310,6 +308,7 @@
             this.exitLabel.Size = new System.Drawing.Size(48, 25);
             this.exitLabel.TabIndex = 12;
             this.exitLabel.Text = "Exit";
+            this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
             // 
             // saveButton
             // 
@@ -329,7 +328,7 @@
             // 
             this.expenseDateTimePicker.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.expenseDateTimePicker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
-            this.expenseDateTimePicker.Location = new System.Drawing.Point(570, 240);
+            this.expenseDateTimePicker.Location = new System.Drawing.Point(571, 241);
             this.expenseDateTimePicker.Name = "expenseDateTimePicker";
             this.expenseDateTimePicker.Size = new System.Drawing.Size(216, 31);
             this.expenseDateTimePicker.TabIndex = 45;
@@ -494,6 +493,7 @@
             this.logoutLabel.Size = new System.Drawing.Size(78, 25);
             this.logoutLabel.TabIndex = 12;
             this.logoutLabel.Text = "Logout";
+            this.logoutLabel.Click += new System.EventHandler(this.logoutLabel_Click);
             // 
             // dashboardPanel
             // 
@@ -536,24 +536,12 @@
             this.label5.TabIndex = 46;
             this.label5.Text = "When I spent it\r\n(Date)";
             // 
-            // closeXPictureBox
-            // 
-            this.closeXPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.close_xbox_google_blue;
-            this.closeXPictureBox.Location = new System.Drawing.Point(1056, 8);
-            this.closeXPictureBox.Name = "closeXPictureBox";
-            this.closeXPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.closeXPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeXPictureBox.TabIndex = 66;
-            this.closeXPictureBox.TabStop = false;
-            this.closeXPictureBox.Click += new System.EventHandler(this.closeXPictureBox_Click);
-            // 
             // Expense
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
-            this.Controls.Add(this.closeXPictureBox);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.expenseDateTimePicker);
             this.Controls.Add(this.label4);
@@ -600,7 +588,6 @@
             this.dashboardPanel.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -649,6 +636,5 @@
         private System.Windows.Forms.PictureBox dashboardPictureBox;
         private System.Windows.Forms.PictureBox logoPictureBox;
         private System.Windows.Forms.Label label5;
-        private System.Windows.Forms.PictureBox closeXPictureBox;
     }
 }

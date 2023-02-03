@@ -96,7 +96,6 @@
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
-            this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.navPanel.SuspendLayout();
             this.exitPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
@@ -126,7 +125,6 @@
             this.panel6.SuspendLayout();
             this.panel7.SuspendLayout();
             this.panel8.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // navPanel
@@ -177,6 +175,7 @@
             this.exitLabel.Size = new System.Drawing.Size(48, 25);
             this.exitLabel.TabIndex = 12;
             this.exitLabel.Text = "Exit";
+            this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
             // 
             // incomePanel
             // 
@@ -361,6 +360,7 @@
             this.logoutLabel.Size = new System.Drawing.Size(78, 25);
             this.logoutLabel.TabIndex = 12;
             this.logoutLabel.Text = "Logout";
+            this.logoutLabel.Click += new System.EventHandler(this.logoutLabel_Click);
             // 
             // dashboardPanel
             // 
@@ -783,7 +783,7 @@
             this.panel7.Controls.Add(this.label19);
             this.panel7.Location = new System.Drawing.Point(856, 16);
             this.panel7.Name = "panel7";
-            this.panel7.Size = new System.Drawing.Size(192, 88);
+            this.panel7.Size = new System.Drawing.Size(224, 88);
             this.panel7.TabIndex = 12;
             // 
             // label18
@@ -862,24 +862,12 @@
             this.label23.TabIndex = 15;
             this.label23.Text = "My Expenses";
             // 
-            // closeXPictureBox
-            // 
-            this.closeXPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.close_xbox_google_blue;
-            this.closeXPictureBox.Location = new System.Drawing.Point(1056, 8);
-            this.closeXPictureBox.Name = "closeXPictureBox";
-            this.closeXPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.closeXPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeXPictureBox.TabIndex = 66;
-            this.closeXPictureBox.TabStop = false;
-            this.closeXPictureBox.Click += new System.EventHandler(this.closeXPictureBox_Click);
-            // 
             // Dashboard
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
-            this.Controls.Add(this.closeXPictureBox);
             this.Controls.Add(this.label23);
             this.Controls.Add(this.label22);
             this.Controls.Add(this.panel8);
@@ -949,7 +937,6 @@
             this.panel7.PerformLayout();
             this.panel8.ResumeLayout(false);
             this.panel8.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1025,7 +1012,6 @@
         private System.Windows.Forms.Label exitLabel;
         private System.Windows.Forms.Label label22;
         private System.Windows.Forms.Label label23;
-        private System.Windows.Forms.PictureBox closeXPictureBox;
     }
 }
 

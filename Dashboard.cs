@@ -50,46 +50,16 @@ namespace Quick_Start_Finance
             Application.Exit();
         }
 
-        //private void dashboardPanel_Paint(object sender, PaintEventArgs e)
-        //{
+        private void logoutLabel_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
+        }
 
-        //    //logoutPanel.BackColor = Color.SteelBlue; // Active navigation element highlighted
-        //    //settingsPanel.BackColor = Color.LightSteelBlue; // Active navigation element highlighted
-        //}
-
-        //private void dashboardPanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void incomePanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void expensePanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void viewIncomePanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void viewExpensePanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void settingsPanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
-
-        //private void logoutPanel_MouseClick(object sender, MouseEventArgs e)
-        //{
-
-        //}
+        private void exitLabel_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
     }
 }

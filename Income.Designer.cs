@@ -69,7 +69,6 @@
             this.incomeDateTimePicker = new System.Windows.Forms.DateTimePicker();
             this.label5 = new System.Windows.Forms.Label();
             this.saveButton = new System.Windows.Forms.Button();
-            this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.exitPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
             this.incomePanel.SuspendLayout();
@@ -89,7 +88,6 @@
             this.navPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             this.panel4.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
             // exitLabel
@@ -102,6 +100,7 @@
             this.exitLabel.Size = new System.Drawing.Size(48, 25);
             this.exitLabel.TabIndex = 12;
             this.exitLabel.Text = "Exit";
+            this.exitLabel.Click += new System.EventHandler(this.exitLabel_Click);
             // 
             // exitPanel
             // 
@@ -194,6 +193,7 @@
             this.logoutLabel.Size = new System.Drawing.Size(78, 25);
             this.logoutLabel.TabIndex = 12;
             this.logoutLabel.Text = "Logout";
+            this.logoutLabel.Click += new System.EventHandler(this.logoutLabel_Click);
             // 
             // viewIncomePanel
             // 
@@ -533,24 +533,12 @@
             this.saveButton.UseVisualStyleBackColor = false;
             this.saveButton.Click += new System.EventHandler(this.saveButton_Click);
             // 
-            // closeXPictureBox
-            // 
-            this.closeXPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.close_xbox_google_blue;
-            this.closeXPictureBox.Location = new System.Drawing.Point(1056, 8);
-            this.closeXPictureBox.Name = "closeXPictureBox";
-            this.closeXPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.closeXPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.closeXPictureBox.TabIndex = 66;
-            this.closeXPictureBox.TabStop = false;
-            this.closeXPictureBox.Click += new System.EventHandler(this.closeXPictureBox_Click);
-            // 
             // Income
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
-            this.Controls.Add(this.closeXPictureBox);
             this.Controls.Add(this.saveButton);
             this.Controls.Add(this.label5);
             this.Controls.Add(this.incomeDateTimePicker);
@@ -599,7 +587,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
             this.panel4.ResumeLayout(false);
             this.panel4.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -648,6 +635,5 @@
         private System.Windows.Forms.DateTimePicker incomeDateTimePicker;
         private System.Windows.Forms.Label label5;
         private System.Windows.Forms.Button saveButton;
-        private System.Windows.Forms.PictureBox closeXPictureBox;
     }
 }
