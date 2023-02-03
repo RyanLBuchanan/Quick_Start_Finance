@@ -13,11 +13,6 @@ namespace Quick_Start_Finance
 {
     public partial class Login : Form
     {
-        public Login()
-        {
-            InitializeComponent();
-        }
-
         // HOME PC database connection
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
@@ -26,6 +21,11 @@ namespace Quick_Start_Finance
 
         public static string User;
 
+        public Login()
+        {
+            InitializeComponent();
+        }
+        
         private void registerLabel_Click(object sender, EventArgs e)
         {
             Users user = new Users();
@@ -59,6 +59,11 @@ namespace Quick_Start_Finance
                 }
                 conn.Close();
             }
+        }
+
+        private void closeXPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
         }
     }
 }

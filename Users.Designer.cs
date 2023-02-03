@@ -180,6 +180,7 @@
             this.backLabel.Size = new System.Drawing.Size(55, 24);
             this.backLabel.TabIndex = 64;
             this.backLabel.Text = "Back";
+            this.backLabel.Click += new System.EventHandler(this.backLabel_Click);
             // 
             // closeXPictureBox
             // 

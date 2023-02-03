@@ -112,6 +112,7 @@
             this.closeXPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.closeXPictureBox.TabIndex = 66;
             this.closeXPictureBox.TabStop = false;
+            this.closeXPictureBox.Click += new System.EventHandler(this.closeXPictureBox_Click);
             // 
             // registerLabel
             // 

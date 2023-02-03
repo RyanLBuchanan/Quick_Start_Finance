@@ -13,17 +13,17 @@ namespace Quick_Start_Finance
 {
     public partial class Users : Form
     {
+        // HOME PC database connection
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        // LAPTOP database connection
+        //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
+
         public Users()
         {
             InitializeComponent();
         }
-
-        // HOME PC database connection
-        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
         
-        // LAPTOP database connection
-        //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
-
         private void Clear()
         {
             usernameTextBox.Text = "";
@@ -34,7 +34,7 @@ namespace Quick_Start_Finance
 
         private void closeXPictureBox_Click(object sender, EventArgs e)
         {
-            this.Close();
+            Application.Exit();
         }
 
         private void addButton_Click(object sender, EventArgs e)
@@ -62,6 +62,13 @@ namespace Quick_Start_Finance
                     MessageBox.Show(ex.Message);
                 }
             }
+        }
+
+        private void backLabel_Click(object sender, EventArgs e)
+        {
+            Login login = new Login();
+            login.Show();
+            this.Hide();
         }
     }
 }

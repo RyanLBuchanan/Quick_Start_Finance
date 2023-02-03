@@ -13,16 +13,16 @@ namespace Quick_Start_Finance
 {
     public partial class Expense : Form
     {
-        public Expense()
-        {
-            InitializeComponent();
-        }
-
         // HOME PC database connection
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        public Expense()
+        {
+            InitializeComponent();
+        }
 
         private void Clear()
         {
