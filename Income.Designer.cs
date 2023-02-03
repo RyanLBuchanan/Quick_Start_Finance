@@ -470,6 +470,16 @@
             // 
             this.incomeCategoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.incomeCategoryComboBox.FormattingEnabled = true;
+            this.incomeCategoryComboBox.Items.AddRange(new object[] {
+            "Allowance",
+            "Bank error in your favor",
+            "Investments",
+            "Gift",
+            "Salary",
+            "Sales",
+            "Tips",
+            "Windfall",
+            "Other"});
             this.incomeCategoryComboBox.Location = new System.Drawing.Point(576, 136);
             this.incomeCategoryComboBox.Name = "incomeCategoryComboBox";
             this.incomeCategoryComboBox.Size = new System.Drawing.Size(216, 33);
