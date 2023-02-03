@@ -428,7 +428,7 @@
             this.totalExpensesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(50)))), ((int)(((byte)(54)))));
             this.totalExpensesPanel.Controls.Add(this.label12);
             this.totalExpensesPanel.Controls.Add(this.label13);
-            this.totalExpensesPanel.Location = new System.Drawing.Point(818, 56);
+            this.totalExpensesPanel.Location = new System.Drawing.Point(824, 56);
             this.totalExpensesPanel.Name = "totalExpensesPanel";
             this.totalExpensesPanel.Size = new System.Drawing.Size(248, 112);
             this.totalExpensesPanel.TabIndex = 37;

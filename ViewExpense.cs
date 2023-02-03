@@ -2,6 +2,7 @@
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
+using System.Data.SqlClient;
 using System.Drawing;
 using System.Linq;
 using System.Text;
@@ -15,6 +16,25 @@ namespace Quick_Start_Finance
         public ViewExpense()
         {
             InitializeComponent();
+            DisplayExpense();
+        }
+        
+        // HOME PC database connection
+        SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        // LAPTOP database connection
+        //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
+
+        private void DisplayExpense()
+        {
+            conn.Open();
+            string query = "SELECT * FROM ExpenseTbl";
+            SqlDataAdapter sda = new SqlDataAdapter(query, conn);
+            SqlCommandBuilder builder = new SqlCommandBuilder(sda);
+            var ds = new DataSet();
+            sda.Fill(ds);
+            expenseDataGridView.DataSource = ds.Tables[0];
+            conn.Close();
         }
 
         private void dashboardLabel_Click(object sender, EventArgs e)
