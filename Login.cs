@@ -24,6 +24,8 @@ namespace Quick_Start_Finance
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
+        public static string User;
+
         private void registerLabel_Click(object sender, EventArgs e)
         {
             Users user = new Users();
@@ -32,23 +34,31 @@ namespace Quick_Start_Finance
 
         private void loginButton_Click(object sender, EventArgs e)
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM UserTbl WHERE Name = '" + loginUsernameTextBox.Text + "' AND Password = '" + loginPasswordTextBox.Text + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            if (dt.Rows[0][0].ToString() == "1")
+            if (loginUsernameTextBox.Text == "" || loginPasswordTextBox.Text == "")
             {
-                Dashboard dashboard = new Dashboard();
-                dashboard.Show();
-                this.Hide();
-                conn.Close();
+                MessageBox.Show("Please enter both username and password.");
             } else
             {
-                MessageBox.Show("Incorrect username or password.");
-                loginUsernameTextBox.Text = "";
-                loginPasswordTextBox.Text = "";
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM UserTbl WHERE Name = '" + loginUsernameTextBox.Text + "' AND Password = '" + loginPasswordTextBox.Text + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                if (dt.Rows[0][0].ToString() == "1")
+                {
+                    User = loginUsernameTextBox.Text;
+                    Dashboard dashboard = new Dashboard();
+                    dashboard.Show();
+                    this.Hide();
+                    conn.Close();
+                }
+                else
+                {
+                    MessageBox.Show("Incorrect username or password.");
+                    loginUsernameTextBox.Text = "";
+                    loginPasswordTextBox.Text = "";
+                }
+                conn.Close();
             }
-            conn.Close();
         }
     }
 }
