@@ -45,6 +45,11 @@ namespace Quick_Start_Finance
             this.Hide();
         }
 
+        private void closeXPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         //private void dashboardPanel_Paint(object sender, PaintEventArgs e)
         //{
 
