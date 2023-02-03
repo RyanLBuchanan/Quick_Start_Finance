@@ -54,12 +54,12 @@ namespace Quick_Start_Finance
                 try
                 {
                     conn.Open();
-                    SqlCommand cmd = new SqlCommand("INSERT INTO IncomeTbl(Name, Amount, Category, Date, Description, User) VALUES(@N, @A, @C, @D, @DE, @U)", conn);
+                    SqlCommand cmd = new SqlCommand("INSERT INTO IncomeTbl(Name, Amount, Category, Date, Description, Username) VALUES(@N, @A, @C, @D, @De, @U)", conn);
                     cmd.Parameters.AddWithValue("@N", incomeTitleTextBox.Text);
                     cmd.Parameters.AddWithValue("@A", incomeAmountTextBox.Text);
                     cmd.Parameters.AddWithValue("@C", incomeCategoryComboBox.SelectedItem.ToString());
                     cmd.Parameters.AddWithValue("@D", incomeDateTimePicker.Value.Date);
-                    cmd.Parameters.AddWithValue("@DE", incomeDescriptionTextBox.Text);
+                    cmd.Parameters.AddWithValue("@De", incomeDescriptionTextBox.Text);
                     cmd.Parameters.AddWithValue("@U", Login.User);
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("New income record added!");
