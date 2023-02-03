@@ -37,6 +37,11 @@ namespace Quick_Start_Finance
             conn.Close();
         }
 
+        private void closeXPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
         private void dashboardLabel_Click(object sender, EventArgs e)
         {
             Dashboard dashboard = new Dashboard();
@@ -44,9 +49,25 @@ namespace Quick_Start_Finance
             this.Hide();
         }
 
-        private void closeXPictureBox_Click(object sender, EventArgs e)
+        private void incomeLabel_Click(object sender, EventArgs e)
         {
-            Application.Exit();
+            Income income = new Income();
+            income.Show();
+            this.Hide();
+        }
+
+        private void expenseLabel_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
+        private void viewExpenseLabel_Click(object sender, EventArgs e)
+        {
+            ViewExpense viewExpense = new ViewExpense();
+            viewExpense.Show();
+            this.Hide();
         }
     }
 }

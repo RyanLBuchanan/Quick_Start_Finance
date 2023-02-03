@@ -182,6 +182,7 @@
             this.viewExpenseLabel.Size = new System.Drawing.Size(142, 25);
             this.viewExpenseLabel.TabIndex = 10;
             this.viewExpenseLabel.Text = "My Expenses";
+            this.viewExpenseLabel.Click += new System.EventHandler(this.viewExpenseLabel_Click);
             // 
             // logoutLabel
             // 
@@ -254,6 +255,7 @@
             this.expenseLabel.Size = new System.Drawing.Size(144, 25);
             this.expenseLabel.TabIndex = 6;
             this.expenseLabel.Text = "New Expense";
+            this.expenseLabel.Click += new System.EventHandler(this.expenseLabel_Click);
             // 
             // logoutPanel
             // 

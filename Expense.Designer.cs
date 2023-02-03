@@ -121,6 +121,7 @@
             this.viewIncomeLabel.Size = new System.Drawing.Size(116, 25);
             this.viewIncomeLabel.TabIndex = 8;
             this.viewIncomeLabel.Text = "My Income";
+            this.viewIncomeLabel.Click += new System.EventHandler(this.viewIncomeLabel_Click);
             // 
             // expensePanel
             // 
@@ -235,6 +236,7 @@
             this.incomeLabel.Size = new System.Drawing.Size(129, 25);
             this.incomeLabel.TabIndex = 4;
             this.incomeLabel.Text = "New Income";
+            this.incomeLabel.Click += new System.EventHandler(this.incomeLabel_Click);
             // 
             // viewExpensePanel
             // 
@@ -265,6 +267,7 @@
             this.viewExpenseLabel.Size = new System.Drawing.Size(142, 25);
             this.viewExpenseLabel.TabIndex = 10;
             this.viewExpenseLabel.Text = "My Expenses";
+            this.viewExpenseLabel.Click += new System.EventHandler(this.viewExpenseLabel_Click);
             // 
             // dashboardLabel
             // 

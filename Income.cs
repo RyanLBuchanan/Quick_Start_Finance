@@ -32,18 +32,6 @@ namespace Quick_Start_Finance
             incomeDescriptionTextBox.Text = "";
         }
 
-        private void dashboardLabel_Click(object sender, EventArgs e)
-        {
-            Dashboard dashboard = new Dashboard();
-            dashboard.Show();
-            this.Hide();
-        }
-
-        private void closeXPictureBox_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void saveButton_Click(object sender, EventArgs e)
         {
             if (incomeTitleTextBox.Text == "" || incomeAmountTextBox.Text == "" || incomeDescriptionTextBox.Text == "" || incomeCategoryComboBox.SelectedIndex == -1)
@@ -74,10 +62,36 @@ namespace Quick_Start_Finance
             }
         }
 
+        private void closeXPictureBox_Click(object sender, EventArgs e)
+        {
+            Application.Exit();
+        }
+
+        private void dashboardLabel_Click(object sender, EventArgs e)
+        {
+            Dashboard dashboard = new Dashboard();
+            dashboard.Show();
+            this.Hide();
+        }
+
+        private void expenseLabel_Click(object sender, EventArgs e)
+        {
+            Expense expense = new Expense();
+            expense.Show();
+            this.Hide();
+        }
+
         private void viewIncomeLabel_Click(object sender, EventArgs e)
         {
             ViewIncome viewIncome = new ViewIncome();
             viewIncome.Show();
+            this.Hide();
+        }
+
+        private void viewExpenseLabel_Click(object sender, EventArgs e)
+        {
+            ViewExpense viewExpense = new ViewExpense();
+            viewExpense.Show();
             this.Hide();
         }
     }
