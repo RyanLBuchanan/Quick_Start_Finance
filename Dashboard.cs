@@ -45,11 +45,6 @@ namespace Quick_Start_Finance
             this.Hide();
         }
 
-        private void closeXPictureBox_Click(object sender, EventArgs e)
-        {
-            Application.Exit();
-        }
-
         private void logoutLabel_Click(object sender, EventArgs e)
         {
             Login login = new Login();

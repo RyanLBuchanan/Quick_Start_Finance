@@ -56,16 +56,16 @@
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.personalFinanceDashboardLabel = new System.Windows.Forms.Label();
             this.totalIncomePanel = new System.Windows.Forms.Panel();
-            this.lastTransactionDateLabel = new System.Windows.Forms.Label();
-            this.numberTransactionsLabel = new System.Windows.Forms.Label();
+            this.lastIncomeTransactionDateLabel = new System.Windows.Forms.Label();
+            this.numberIncomeTransactionsLabel = new System.Windows.Forms.Label();
             this.transactionsLabel = new System.Windows.Forms.Label();
-            this.amountInDollarsLabel = new System.Windows.Forms.Label();
+            this.totalIncomeAmountLabel = new System.Windows.Forms.Label();
             this.totalIncomeLabel = new System.Windows.Forms.Label();
             this.totalExpensePanel = new System.Windows.Forms.Panel();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
+            this.lastExpenseTransactionDateLabel = new System.Windows.Forms.Label();
+            this.numberExpenseTransactionsLabel = new System.Windows.Forms.Label();
             this.label3 = new System.Windows.Forms.Label();
-            this.label4 = new System.Windows.Forms.Label();
+            this.totalExpenseAmountLabel = new System.Windows.Forms.Label();
             this.totalExpenseLabel = new System.Windows.Forms.Label();
             this.maximumIncomePanel = new System.Windows.Forms.Panel();
             this.label8 = new System.Windows.Forms.Label();
@@ -418,10 +418,10 @@
             // totalIncomePanel
             // 
             this.totalIncomePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(186)))), ((int)(((byte)(84)))));
-            this.totalIncomePanel.Controls.Add(this.lastTransactionDateLabel);
-            this.totalIncomePanel.Controls.Add(this.numberTransactionsLabel);
+            this.totalIncomePanel.Controls.Add(this.lastIncomeTransactionDateLabel);
+            this.totalIncomePanel.Controls.Add(this.numberIncomeTransactionsLabel);
             this.totalIncomePanel.Controls.Add(this.transactionsLabel);
-            this.totalIncomePanel.Controls.Add(this.amountInDollarsLabel);
+            this.totalIncomePanel.Controls.Add(this.totalIncomeAmountLabel);
             this.totalIncomePanel.Controls.Add(this.totalIncomeLabel);
             this.totalIncomePanel.Font = new System.Drawing.Font("Microsoft Sans Serif", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.totalIncomePanel.Location = new System.Drawing.Point(240, 120);
@@ -429,27 +429,27 @@
             this.totalIncomePanel.Size = new System.Drawing.Size(408, 248);
             this.totalIncomePanel.TabIndex = 4;
             // 
-            // lastTransactionDateLabel
+            // lastIncomeTransactionDateLabel
             // 
-            this.lastTransactionDateLabel.AutoSize = true;
-            this.lastTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.lastTransactionDateLabel.ForeColor = System.Drawing.Color.White;
-            this.lastTransactionDateLabel.Location = new System.Drawing.Point(8, 216);
-            this.lastTransactionDateLabel.Name = "lastTransactionDateLabel";
-            this.lastTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
-            this.lastTransactionDateLabel.TabIndex = 7;
-            this.lastTransactionDateLabel.Text = "Last Transaction Date";
+            this.lastIncomeTransactionDateLabel.AutoSize = true;
+            this.lastIncomeTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastIncomeTransactionDateLabel.ForeColor = System.Drawing.Color.White;
+            this.lastIncomeTransactionDateLabel.Location = new System.Drawing.Point(8, 216);
+            this.lastIncomeTransactionDateLabel.Name = "lastIncomeTransactionDateLabel";
+            this.lastIncomeTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
+            this.lastIncomeTransactionDateLabel.TabIndex = 7;
+            this.lastIncomeTransactionDateLabel.Text = "Last Transaction Date";
             // 
-            // numberTransactionsLabel
+            // numberIncomeTransactionsLabel
             // 
-            this.numberTransactionsLabel.AutoSize = true;
-            this.numberTransactionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.numberTransactionsLabel.ForeColor = System.Drawing.Color.Black;
-            this.numberTransactionsLabel.Location = new System.Drawing.Point(24, 176);
-            this.numberTransactionsLabel.Name = "numberTransactionsLabel";
-            this.numberTransactionsLabel.Size = new System.Drawing.Size(90, 25);
-            this.numberTransactionsLabel.TabIndex = 6;
-            this.numberTransactionsLabel.Text = "number";
+            this.numberIncomeTransactionsLabel.AutoSize = true;
+            this.numberIncomeTransactionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberIncomeTransactionsLabel.ForeColor = System.Drawing.Color.Black;
+            this.numberIncomeTransactionsLabel.Location = new System.Drawing.Point(24, 176);
+            this.numberIncomeTransactionsLabel.Name = "numberIncomeTransactionsLabel";
+            this.numberIncomeTransactionsLabel.Size = new System.Drawing.Size(90, 25);
+            this.numberIncomeTransactionsLabel.TabIndex = 6;
+            this.numberIncomeTransactionsLabel.Text = "number";
             // 
             // transactionsLabel
             // 
@@ -462,16 +462,16 @@
             this.transactionsLabel.TabIndex = 5;
             this.transactionsLabel.Text = "Stuff that gives me money\r\n(Transactions)";
             // 
-            // amountInDollarsLabel
+            // totalIncomeAmountLabel
             // 
-            this.amountInDollarsLabel.AutoSize = true;
-            this.amountInDollarsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.amountInDollarsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.amountInDollarsLabel.Location = new System.Drawing.Point(24, 72);
-            this.amountInDollarsLabel.Name = "amountInDollarsLabel";
-            this.amountInDollarsLabel.Size = new System.Drawing.Size(198, 25);
-            this.amountInDollarsLabel.TabIndex = 4;
-            this.amountInDollarsLabel.Text = "Amount in Dollars";
+            this.totalIncomeAmountLabel.AutoSize = true;
+            this.totalIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.totalIncomeAmountLabel.Location = new System.Drawing.Point(24, 72);
+            this.totalIncomeAmountLabel.Name = "totalIncomeAmountLabel";
+            this.totalIncomeAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.totalIncomeAmountLabel.TabIndex = 4;
+            this.totalIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // totalIncomeLabel
             // 
@@ -487,37 +487,37 @@
             // totalExpensePanel
             // 
             this.totalExpensePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(50)))), ((int)(((byte)(54)))));
-            this.totalExpensePanel.Controls.Add(this.label1);
-            this.totalExpensePanel.Controls.Add(this.label2);
+            this.totalExpensePanel.Controls.Add(this.lastExpenseTransactionDateLabel);
+            this.totalExpensePanel.Controls.Add(this.numberExpenseTransactionsLabel);
             this.totalExpensePanel.Controls.Add(this.label3);
-            this.totalExpensePanel.Controls.Add(this.label4);
+            this.totalExpensePanel.Controls.Add(this.totalExpenseAmountLabel);
             this.totalExpensePanel.Controls.Add(this.totalExpenseLabel);
             this.totalExpensePanel.Location = new System.Drawing.Point(672, 120);
             this.totalExpensePanel.Name = "totalExpensePanel";
             this.totalExpensePanel.Size = new System.Drawing.Size(408, 248);
             this.totalExpensePanel.TabIndex = 8;
             // 
-            // label1
+            // lastExpenseTransactionDateLabel
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.White;
-            this.label1.Location = new System.Drawing.Point(8, 216);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(223, 25);
-            this.label1.TabIndex = 7;
-            this.label1.Text = "Last Transaction Date";
+            this.lastExpenseTransactionDateLabel.AutoSize = true;
+            this.lastExpenseTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lastExpenseTransactionDateLabel.ForeColor = System.Drawing.Color.White;
+            this.lastExpenseTransactionDateLabel.Location = new System.Drawing.Point(8, 216);
+            this.lastExpenseTransactionDateLabel.Name = "lastExpenseTransactionDateLabel";
+            this.lastExpenseTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
+            this.lastExpenseTransactionDateLabel.TabIndex = 7;
+            this.lastExpenseTransactionDateLabel.Text = "Last Transaction Date";
             // 
-            // label2
+            // numberExpenseTransactionsLabel
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.ForeColor = System.Drawing.Color.Black;
-            this.label2.Location = new System.Drawing.Point(24, 176);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(90, 25);
-            this.label2.TabIndex = 6;
-            this.label2.Text = "number";
+            this.numberExpenseTransactionsLabel.AutoSize = true;
+            this.numberExpenseTransactionsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.numberExpenseTransactionsLabel.ForeColor = System.Drawing.Color.Black;
+            this.numberExpenseTransactionsLabel.Location = new System.Drawing.Point(24, 176);
+            this.numberExpenseTransactionsLabel.Name = "numberExpenseTransactionsLabel";
+            this.numberExpenseTransactionsLabel.Size = new System.Drawing.Size(90, 25);
+            this.numberExpenseTransactionsLabel.TabIndex = 6;
+            this.numberExpenseTransactionsLabel.Text = "number";
             // 
             // label3
             // 
@@ -530,16 +530,16 @@
             this.label3.TabIndex = 5;
             this.label3.Text = "Stuff that took my money\r\n(Transactions)\r\n";
             // 
-            // label4
+            // totalExpenseAmountLabel
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label4.Location = new System.Drawing.Point(24, 72);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(198, 25);
-            this.label4.TabIndex = 4;
-            this.label4.Text = "Amount in Dollars";
+            this.totalExpenseAmountLabel.AutoSize = true;
+            this.totalExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.totalExpenseAmountLabel.Location = new System.Drawing.Point(24, 72);
+            this.totalExpenseAmountLabel.Name = "totalExpenseAmountLabel";
+            this.totalExpenseAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.totalExpenseAmountLabel.TabIndex = 4;
+            this.totalExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // totalExpenseLabel
             // 
@@ -969,16 +969,16 @@
         private System.Windows.Forms.Panel settingsPanel;
         private System.Windows.Forms.Label personalFinanceDashboardLabel;
         private System.Windows.Forms.Panel totalIncomePanel;
-        private System.Windows.Forms.Label lastTransactionDateLabel;
-        private System.Windows.Forms.Label numberTransactionsLabel;
+        private System.Windows.Forms.Label lastIncomeTransactionDateLabel;
+        private System.Windows.Forms.Label numberIncomeTransactionsLabel;
         private System.Windows.Forms.Label transactionsLabel;
-        private System.Windows.Forms.Label amountInDollarsLabel;
+        private System.Windows.Forms.Label totalIncomeAmountLabel;
         private System.Windows.Forms.Label totalIncomeLabel;
         private System.Windows.Forms.Panel totalExpensePanel;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label lastExpenseTransactionDateLabel;
+        private System.Windows.Forms.Label numberExpenseTransactionsLabel;
         private System.Windows.Forms.Label label3;
-        private System.Windows.Forms.Label label4;
+        private System.Windows.Forms.Label totalExpenseAmountLabel;
         private System.Windows.Forms.Label totalExpenseLabel;
         private System.Windows.Forms.Panel maximumIncomePanel;
         private System.Windows.Forms.Label label8;
