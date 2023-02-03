@@ -37,52 +37,52 @@
             this.textBox1 = new System.Windows.Forms.TextBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPanel = new System.Windows.Forms.Panel();
+            this.exitPictureBox = new System.Windows.Forms.PictureBox();
             this.incomePanel = new System.Windows.Forms.Panel();
+            this.incomePictureBox = new System.Windows.Forms.PictureBox();
             this.incomeLabel = new System.Windows.Forms.Label();
             this.viewExpenseLabel = new System.Windows.Forms.Label();
             this.logoutLabel = new System.Windows.Forms.Label();
             this.viewIncomePanel = new System.Windows.Forms.Panel();
+            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
             this.viewIncomeLabel = new System.Windows.Forms.Label();
             this.expensePanel = new System.Windows.Forms.Panel();
+            this.expensePictureBox = new System.Windows.Forms.PictureBox();
             this.expenseLabel = new System.Windows.Forms.Label();
             this.logoutPanel = new System.Windows.Forms.Panel();
+            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.settingsLabel = new System.Windows.Forms.Label();
             this.viewExpensePanel = new System.Windows.Forms.Panel();
+            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
             this.settingsPanel = new System.Windows.Forms.Panel();
+            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
             this.dashboardPanel = new System.Windows.Forms.Panel();
+            this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
             this.dashboardLabel = new System.Windows.Forms.Label();
             this.personalFinanceDashboardLabel = new System.Windows.Forms.Label();
             this.navPanel = new System.Windows.Forms.Panel();
-            this.guna2DataGridView1 = new Guna.UI2.WinForms.Guna2DataGridView();
-            this.exitPictureBox = new System.Windows.Forms.PictureBox();
-            this.incomePictureBox = new System.Windows.Forms.PictureBox();
-            this.viewIncomePictureBox = new System.Windows.Forms.PictureBox();
-            this.expensePictureBox = new System.Windows.Forms.PictureBox();
-            this.viewExpensePictureBox = new System.Windows.Forms.PictureBox();
-            this.settingsPictureBox = new System.Windows.Forms.PictureBox();
-            this.logoutPictureBox = new System.Windows.Forms.PictureBox();
-            this.dashboardPictureBox = new System.Windows.Forms.PictureBox();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
+            this.incomeDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.exitPanel.SuspendLayout();
-            this.incomePanel.SuspendLayout();
-            this.viewIncomePanel.SuspendLayout();
-            this.expensePanel.SuspendLayout();
-            this.logoutPanel.SuspendLayout();
-            this.viewExpensePanel.SuspendLayout();
-            this.settingsPanel.SuspendLayout();
-            this.dashboardPanel.SuspendLayout();
-            this.navPanel.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).BeginInit();
+            this.incomePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).BeginInit();
+            this.viewIncomePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).BeginInit();
+            this.expensePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
+            this.logoutPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).BeginInit();
+            this.viewExpensePanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
+            this.settingsPanel.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).BeginInit();
+            this.dashboardPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).BeginInit();
+            this.navPanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomeDataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
             // 
@@ -145,6 +145,16 @@
             this.exitPanel.Size = new System.Drawing.Size(224, 48);
             this.exitPanel.TabIndex = 18;
             // 
+            // exitPictureBox
+            // 
+            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white1;
+            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.exitPictureBox.Name = "exitPictureBox";
+            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.exitPictureBox.TabIndex = 11;
+            this.exitPictureBox.TabStop = false;
+            // 
             // incomePanel
             // 
             this.incomePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
@@ -154,6 +164,16 @@
             this.incomePanel.Name = "incomePanel";
             this.incomePanel.Size = new System.Drawing.Size(224, 48);
             this.incomePanel.TabIndex = 17;
+            // 
+            // incomePictureBox
+            // 
+            this.incomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.income_white;
+            this.incomePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.incomePictureBox.Name = "incomePictureBox";
+            this.incomePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.incomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.incomePictureBox.TabIndex = 3;
+            this.incomePictureBox.TabStop = false;
             // 
             // incomeLabel
             // 
@@ -198,6 +218,16 @@
             this.viewIncomePanel.Size = new System.Drawing.Size(224, 48);
             this.viewIncomePanel.TabIndex = 17;
             // 
+            // viewIncomePictureBox
+            // 
+            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
+            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
+            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewIncomePictureBox.TabIndex = 7;
+            this.viewIncomePictureBox.TabStop = false;
+            // 
             // viewIncomeLabel
             // 
             this.viewIncomeLabel.AutoSize = true;
@@ -217,6 +247,16 @@
             this.expensePanel.Name = "expensePanel";
             this.expensePanel.Size = new System.Drawing.Size(224, 48);
             this.expensePanel.TabIndex = 17;
+            // 
+            // expensePictureBox
+            // 
+            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
+            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.expensePictureBox.Name = "expensePictureBox";
+            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.expensePictureBox.TabIndex = 5;
+            this.expensePictureBox.TabStop = false;
             // 
             // expenseLabel
             // 
@@ -238,6 +278,16 @@
             this.logoutPanel.Size = new System.Drawing.Size(224, 48);
             this.logoutPanel.TabIndex = 17;
             // 
+            // logoutPictureBox
+            // 
+            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
+            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.logoutPictureBox.Name = "logoutPictureBox";
+            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.logoutPictureBox.TabIndex = 11;
+            this.logoutPictureBox.TabStop = false;
+            // 
             // settingsLabel
             // 
             this.settingsLabel.AutoSize = true;
@@ -258,6 +308,16 @@
             this.viewExpensePanel.Size = new System.Drawing.Size(224, 48);
             this.viewExpensePanel.TabIndex = 17;
             // 
+            // viewExpensePictureBox
+            // 
+            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
+            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
+            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
+            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
+            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.viewExpensePictureBox.TabIndex = 9;
+            this.viewExpensePictureBox.TabStop = false;
+            // 
             // settingsPanel
             // 
             this.settingsPanel.Controls.Add(this.settingsPictureBox);
@@ -266,6 +326,16 @@
             this.settingsPanel.Name = "settingsPanel";
             this.settingsPanel.Size = new System.Drawing.Size(224, 48);
             this.settingsPanel.TabIndex = 17;
+            // 
+            // settingsPictureBox
+            // 
+            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
+            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.settingsPictureBox.Name = "settingsPictureBox";
+            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.settingsPictureBox.TabIndex = 13;
+            this.settingsPictureBox.TabStop = false;
             // 
             // dashboardPanel
             // 
@@ -277,6 +347,16 @@
             this.dashboardPanel.Size = new System.Drawing.Size(224, 48);
             this.dashboardPanel.TabIndex = 15;
             // 
+            // dashboardPictureBox
+            // 
+            this.dashboardPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.dashboard_white;
+            this.dashboardPictureBox.Location = new System.Drawing.Point(16, 8);
+            this.dashboardPictureBox.Name = "dashboardPictureBox";
+            this.dashboardPictureBox.Size = new System.Drawing.Size(32, 32);
+            this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.dashboardPictureBox.TabIndex = 1;
+            this.dashboardPictureBox.TabStop = false;
+            // 
             // dashboardLabel
             // 
             this.dashboardLabel.AutoSize = true;
@@ -287,6 +367,7 @@
             this.dashboardLabel.Size = new System.Drawing.Size(136, 25);
             this.dashboardLabel.TabIndex = 2;
             this.dashboardLabel.Text = "My Overview";
+            this.dashboardLabel.Click += new System.EventHandler(this.dashboardLabel_Click);
             // 
             // personalFinanceDashboardLabel
             // 
@@ -319,136 +400,6 @@
             this.navPanel.Size = new System.Drawing.Size(224, 800);
             this.navPanel.TabIndex = 35;
             // 
-            // guna2DataGridView1
-            // 
-            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.guna2DataGridView1.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
-            this.guna2DataGridView1.ColumnHeadersHeight = 4;
-            this.guna2DataGridView1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.guna2DataGridView1.DefaultCellStyle = dataGridViewCellStyle3;
-            this.guna2DataGridView1.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.Location = new System.Drawing.Point(240, 232);
-            this.guna2DataGridView1.Name = "guna2DataGridView1";
-            this.guna2DataGridView1.RowHeadersVisible = false;
-            this.guna2DataGridView1.Size = new System.Drawing.Size(832, 520);
-            this.guna2DataGridView1.TabIndex = 45;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.Font = null;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
-            this.guna2DataGridView1.ThemeStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
-            this.guna2DataGridView1.ThemeStyle.HeaderStyle.Height = 4;
-            this.guna2DataGridView1.ThemeStyle.ReadOnly = false;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.Height = 22;
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.guna2DataGridView1.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
-            // 
-            // exitPictureBox
-            // 
-            this.exitPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.exit_white1;
-            this.exitPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.exitPictureBox.Name = "exitPictureBox";
-            this.exitPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.exitPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.exitPictureBox.TabIndex = 11;
-            this.exitPictureBox.TabStop = false;
-            // 
-            // incomePictureBox
-            // 
-            this.incomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.income_white;
-            this.incomePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.incomePictureBox.Name = "incomePictureBox";
-            this.incomePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.incomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.incomePictureBox.TabIndex = 3;
-            this.incomePictureBox.TabStop = false;
-            // 
-            // viewIncomePictureBox
-            // 
-            this.viewIncomePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_income_white;
-            this.viewIncomePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewIncomePictureBox.Name = "viewIncomePictureBox";
-            this.viewIncomePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewIncomePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewIncomePictureBox.TabIndex = 7;
-            this.viewIncomePictureBox.TabStop = false;
-            // 
-            // expensePictureBox
-            // 
-            this.expensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.expense_white;
-            this.expensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.expensePictureBox.Name = "expensePictureBox";
-            this.expensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.expensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.expensePictureBox.TabIndex = 5;
-            this.expensePictureBox.TabStop = false;
-            // 
-            // viewExpensePictureBox
-            // 
-            this.viewExpensePictureBox.Image = global::Quick_Start_Finance.Properties.Resources.view_expense_white;
-            this.viewExpensePictureBox.Location = new System.Drawing.Point(16, 8);
-            this.viewExpensePictureBox.Name = "viewExpensePictureBox";
-            this.viewExpensePictureBox.Size = new System.Drawing.Size(32, 32);
-            this.viewExpensePictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.viewExpensePictureBox.TabIndex = 9;
-            this.viewExpensePictureBox.TabStop = false;
-            // 
-            // settingsPictureBox
-            // 
-            this.settingsPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.settings_white;
-            this.settingsPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.settingsPictureBox.Name = "settingsPictureBox";
-            this.settingsPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.settingsPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.settingsPictureBox.TabIndex = 13;
-            this.settingsPictureBox.TabStop = false;
-            // 
-            // logoutPictureBox
-            // 
-            this.logoutPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.logout_white;
-            this.logoutPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.logoutPictureBox.Name = "logoutPictureBox";
-            this.logoutPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.logoutPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.logoutPictureBox.TabIndex = 11;
-            this.logoutPictureBox.TabStop = false;
-            // 
-            // dashboardPictureBox
-            // 
-            this.dashboardPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.dashboard_white;
-            this.dashboardPictureBox.Location = new System.Drawing.Point(16, 8);
-            this.dashboardPictureBox.Name = "dashboardPictureBox";
-            this.dashboardPictureBox.Size = new System.Drawing.Size(32, 32);
-            this.dashboardPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.dashboardPictureBox.TabIndex = 1;
-            this.dashboardPictureBox.TabStop = false;
-            // 
             // logoPictureBox
             // 
             this.logoPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.Quick_Start_Finance_logo;
@@ -459,6 +410,56 @@
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
+            // incomeDataGridView
+            // 
+            dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
+            this.incomeDataGridView.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle2.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.Color.White;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.incomeDataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
+            this.incomeDataGridView.ColumnHeadersHeight = 4;
+            this.incomeDataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            dataGridViewCellStyle3.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle3.BackColor = System.Drawing.Color.White;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle3.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            dataGridViewCellStyle3.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.incomeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
+            this.incomeDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.incomeDataGridView.Location = new System.Drawing.Point(240, 232);
+            this.incomeDataGridView.Name = "incomeDataGridView";
+            this.incomeDataGridView.RowHeadersVisible = false;
+            this.incomeDataGridView.Size = new System.Drawing.Size(832, 520);
+            this.incomeDataGridView.TabIndex = 45;
+            this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
+            this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
+            this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.ForeColor = System.Drawing.Color.Empty;
+            this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionBackColor = System.Drawing.Color.Empty;
+            this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.SelectionForeColor = System.Drawing.Color.Empty;
+            this.incomeDataGridView.ThemeStyle.BackColor = System.Drawing.Color.White;
+            this.incomeDataGridView.ThemeStyle.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(88)))), ((int)(((byte)(255)))));
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.BorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.ForeColor = System.Drawing.Color.White;
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.HeaightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.EnableResizing;
+            this.incomeDataGridView.ThemeStyle.HeaderStyle.Height = 4;
+            this.incomeDataGridView.ThemeStyle.ReadOnly = false;
+            this.incomeDataGridView.ThemeStyle.RowsStyle.BackColor = System.Drawing.Color.White;
+            this.incomeDataGridView.ThemeStyle.RowsStyle.BorderStyle = System.Windows.Forms.DataGridViewCellBorderStyle.SingleHorizontal;
+            this.incomeDataGridView.ThemeStyle.RowsStyle.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.incomeDataGridView.ThemeStyle.RowsStyle.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            this.incomeDataGridView.ThemeStyle.RowsStyle.Height = 22;
+            this.incomeDataGridView.ThemeStyle.RowsStyle.SelectionBackColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
+            this.incomeDataGridView.ThemeStyle.RowsStyle.SelectionForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(71)))), ((int)(((byte)(69)))), ((int)(((byte)(94)))));
+            // 
             // closeXPictureBox
             // 
             this.closeXPictureBox.Image = global::Quick_Start_Finance.Properties.Resources.close_xbox_google_blue;
@@ -468,6 +469,7 @@
             this.closeXPictureBox.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
             this.closeXPictureBox.TabIndex = 66;
             this.closeXPictureBox.TabStop = false;
+            this.closeXPictureBox.Click += new System.EventHandler(this.closeXPictureBox_Click);
             // 
             // ViewIncome
             // 
@@ -476,7 +478,7 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
             this.Controls.Add(this.closeXPictureBox);
-            this.Controls.Add(this.guna2DataGridView1);
+            this.Controls.Add(this.incomeDataGridView);
             this.Controls.Add(this.label4);
             this.Controls.Add(this.categoryComboBox);
             this.Controls.Add(this.label1);
@@ -489,31 +491,31 @@
             this.Text = "ViewIncome";
             this.exitPanel.ResumeLayout(false);
             this.exitPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
             this.incomePanel.ResumeLayout(false);
             this.incomePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
             this.viewIncomePanel.ResumeLayout(false);
             this.viewIncomePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
             this.expensePanel.ResumeLayout(false);
             this.expensePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
             this.logoutPanel.ResumeLayout(false);
             this.logoutPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             this.viewExpensePanel.ResumeLayout(false);
             this.viewExpensePanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
             this.settingsPanel.ResumeLayout(false);
             this.settingsPanel.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
             this.dashboardPanel.ResumeLayout(false);
             this.dashboardPanel.PerformLayout();
-            this.navPanel.ResumeLayout(false);
-            ((System.ComponentModel.ISupportInitialize)(this.guna2DataGridView1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.exitPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.incomePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewIncomePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.expensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.settingsPictureBox)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.logoutPictureBox)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dashboardPictureBox)).EndInit();
+            this.navPanel.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.incomeDataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -553,7 +555,7 @@
         private System.Windows.Forms.Label dashboardLabel;
         private System.Windows.Forms.Label personalFinanceDashboardLabel;
         private System.Windows.Forms.Panel navPanel;
-        private Guna.UI2.WinForms.Guna2DataGridView guna2DataGridView1;
+        private Guna.UI2.WinForms.Guna2DataGridView incomeDataGridView;
         private System.Windows.Forms.PictureBox closeXPictureBox;
     }
 }

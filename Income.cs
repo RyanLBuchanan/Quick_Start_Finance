@@ -72,5 +72,12 @@ namespace Quick_Start_Finance
                 }
             }
         }
+
+        private void viewIncomeLabel_Click(object sender, EventArgs e)
+        {
+            ViewIncome viewIncome = new ViewIncome();
+            viewIncome.Show();
+            this.Hide();
+        }
     }
 }

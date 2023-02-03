@@ -223,6 +223,7 @@
             this.viewIncomeLabel.Size = new System.Drawing.Size(116, 25);
             this.viewIncomeLabel.TabIndex = 8;
             this.viewIncomeLabel.Text = "My Income";
+            this.viewIncomeLabel.Click += new System.EventHandler(this.viewIncomeLabel_Click);
             // 
             // expensePanel
             // 
