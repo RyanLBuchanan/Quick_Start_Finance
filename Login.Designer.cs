@@ -37,7 +37,7 @@
             this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.registerLabel = new System.Windows.Forms.Label();
             this.showPasswordCheckBox = new System.Windows.Forms.CheckBox();
-            this.label3 = new System.Windows.Forms.Label();
+            this.clearLoginFieldsLabel = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -131,7 +131,8 @@
             // showPasswordCheckBox
             // 
             this.showPasswordCheckBox.AutoSize = true;
-            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPasswordCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.showPasswordCheckBox.Location = new System.Drawing.Point(40, 360);
             this.showPasswordCheckBox.Name = "showPasswordCheckBox";
             this.showPasswordCheckBox.Size = new System.Drawing.Size(140, 24);
@@ -140,15 +141,17 @@
             this.showPasswordCheckBox.UseVisualStyleBackColor = true;
             this.showPasswordCheckBox.CheckedChanged += new System.EventHandler(this.showPasswordCheckBox_CheckedChanged);
             // 
-            // label3
+            // clearLoginFieldsLabel
             // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(416, 360);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(46, 20);
-            this.label3.TabIndex = 69;
-            this.label3.Text = "Clear";
+            this.clearLoginFieldsLabel.AutoSize = true;
+            this.clearLoginFieldsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearLoginFieldsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
+            this.clearLoginFieldsLabel.Location = new System.Drawing.Point(416, 360);
+            this.clearLoginFieldsLabel.Name = "clearLoginFieldsLabel";
+            this.clearLoginFieldsLabel.Size = new System.Drawing.Size(46, 20);
+            this.clearLoginFieldsLabel.TabIndex = 69;
+            this.clearLoginFieldsLabel.Text = "Clear";
+            this.clearLoginFieldsLabel.Click += new System.EventHandler(this.clearLoginFieldsLabel_Click);
             // 
             // Login
             // 
@@ -156,7 +159,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(500, 700);
-            this.Controls.Add(this.label3);
+            this.Controls.Add(this.clearLoginFieldsLabel);
             this.Controls.Add(this.showPasswordCheckBox);
             this.Controls.Add(this.registerLabel);
             this.Controls.Add(this.closeXPictureBox);
@@ -187,6 +190,6 @@
         private System.Windows.Forms.PictureBox closeXPictureBox;
         private System.Windows.Forms.Label registerLabel;
         private System.Windows.Forms.CheckBox showPasswordCheckBox;
-        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label clearLoginFieldsLabel;
     }
 }

@@ -77,5 +77,11 @@ namespace Quick_Start_Finance
                 loginPasswordTextBox.UseSystemPasswordChar = true;
             }
         }
+
+        private void clearLoginFieldsLabel_Click(object sender, EventArgs e)
+        {
+            loginUsernameTextBox.Text = "";
+            loginPasswordTextBox.Text = "";
+        }
     }
 }
