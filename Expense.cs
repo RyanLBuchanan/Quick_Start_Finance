@@ -19,8 +19,6 @@ namespace Quick_Start_Finance
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
-        private int TotalExpense;
-
         public Expense()
         {
             InitializeComponent();
@@ -58,6 +56,7 @@ namespace Quick_Start_Finance
                     cmd.ExecuteNonQuery();
                     MessageBox.Show("New expense record added!");
                     conn.Close();
+                    GetTotalExpense();
                     Clear();
                 }
                 catch (Exception ex)
@@ -75,7 +74,6 @@ namespace Quick_Start_Finance
                 SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
                 DataTable dt = new DataTable();
                 sda.Fill(dt);
-                TotalExpense = Convert.ToInt32(dt.Rows[0][0]);
                 totalExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
                 conn.Close();
             }
