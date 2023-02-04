@@ -19,6 +19,8 @@ namespace Quick_Start_Finance
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
+        int Income, Expense;
+
         public Dashboard()
         {
             InitializeComponent();
@@ -40,6 +42,9 @@ namespace Quick_Start_Finance
             GetMinExpense();
 
             //GetMostRecentExpense();
+
+            // Get Current Balance
+            GetBalance();
         }
 
         private void GetTotalIncome()
@@ -48,6 +53,7 @@ namespace Quick_Start_Finance
             SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Income = Convert.ToInt32(dt.Rows[0][0]);
             totalIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
             conn.Close();
         }
@@ -109,6 +115,7 @@ namespace Quick_Start_Finance
             SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
             DataTable dt = new DataTable();
             sda.Fill(dt);
+            Expense = Convert.ToInt32(dt.Rows[0][0]);
             totalExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
             conn.Close();
         }
@@ -163,6 +170,12 @@ namespace Quick_Start_Finance
         //    mostRecentExpenseAmountLabel.Text = $"{dt.Rows[0][1]:C}";
         //    conn.Close();
         //}
+
+        private void GetBalance()
+        {
+            double Balance = Income - Expense;
+            balanceLabel.Text = Balance.ToString("C2");
+        }
 
         private void incomeLabel_Click(object sender, EventArgs e)
         {

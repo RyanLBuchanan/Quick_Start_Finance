@@ -89,7 +89,7 @@
             this.bestExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
-            this.label18 = new System.Windows.Forms.Label();
+            this.balanceLabel = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
             this.bestIncomeAmountLabel = new System.Windows.Forms.Label();
@@ -434,7 +434,7 @@
             this.lastIncomeTransactionDateLabel.AutoSize = true;
             this.lastIncomeTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastIncomeTransactionDateLabel.ForeColor = System.Drawing.Color.White;
-            this.lastIncomeTransactionDateLabel.Location = new System.Drawing.Point(8, 216);
+            this.lastIncomeTransactionDateLabel.Location = new System.Drawing.Point(96, 216);
             this.lastIncomeTransactionDateLabel.Name = "lastIncomeTransactionDateLabel";
             this.lastIncomeTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
             this.lastIncomeTransactionDateLabel.TabIndex = 7;
@@ -502,7 +502,7 @@
             this.lastExpenseTransactionDateLabel.AutoSize = true;
             this.lastExpenseTransactionDateLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lastExpenseTransactionDateLabel.ForeColor = System.Drawing.Color.White;
-            this.lastExpenseTransactionDateLabel.Location = new System.Drawing.Point(8, 216);
+            this.lastExpenseTransactionDateLabel.Location = new System.Drawing.Point(96, 216);
             this.lastExpenseTransactionDateLabel.Name = "lastExpenseTransactionDateLabel";
             this.lastExpenseTransactionDateLabel.Size = new System.Drawing.Size(223, 25);
             this.lastExpenseTransactionDateLabel.TabIndex = 7;
@@ -779,23 +779,23 @@
             // panel7
             // 
             this.panel7.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(137)))), ((int)(((byte)(207)))), ((int)(((byte)(240)))));
-            this.panel7.Controls.Add(this.label18);
+            this.panel7.Controls.Add(this.balanceLabel);
             this.panel7.Controls.Add(this.label19);
             this.panel7.Location = new System.Drawing.Point(856, 16);
             this.panel7.Name = "panel7";
             this.panel7.Size = new System.Drawing.Size(224, 88);
             this.panel7.TabIndex = 12;
             // 
-            // label18
+            // balanceLabel
             // 
-            this.label18.AutoSize = true;
-            this.label18.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label18.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label18.Location = new System.Drawing.Point(16, 56);
-            this.label18.Name = "label18";
-            this.label18.Size = new System.Drawing.Size(198, 25);
-            this.label18.TabIndex = 4;
-            this.label18.Text = "Amount in Dollars";
+            this.balanceLabel.AutoSize = true;
+            this.balanceLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 18F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.balanceLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.balanceLabel.Location = new System.Drawing.Point(72, 56);
+            this.balanceLabel.Name = "balanceLabel";
+            this.balanceLabel.Size = new System.Drawing.Size(76, 29);
+            this.balanceLabel.TabIndex = 4;
+            this.balanceLabel.Text = "$0.00";
             // 
             // label19
             // 
@@ -1002,7 +1002,7 @@
         private System.Windows.Forms.Label bestExpenseAmountLabel;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel7;
-        private System.Windows.Forms.Label label18;
+        private System.Windows.Forms.Label balanceLabel;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel8;
         private System.Windows.Forms.Label bestIncomeAmountLabel;
