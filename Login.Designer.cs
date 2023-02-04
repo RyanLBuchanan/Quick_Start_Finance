@@ -36,6 +36,8 @@
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.closeXPictureBox = new System.Windows.Forms.PictureBox();
             this.registerLabel = new System.Windows.Forms.Label();
+            this.showPasswordCheckBox = new System.Windows.Forms.CheckBox();
+            this.label3 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.closeXPictureBox)).BeginInit();
             this.SuspendLayout();
@@ -126,12 +128,36 @@
             this.registerLabel.Text = "Register";
             this.registerLabel.Click += new System.EventHandler(this.registerLabel_Click);
             // 
+            // showPasswordCheckBox
+            // 
+            this.showPasswordCheckBox.AutoSize = true;
+            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPasswordCheckBox.Location = new System.Drawing.Point(40, 360);
+            this.showPasswordCheckBox.Name = "showPasswordCheckBox";
+            this.showPasswordCheckBox.Size = new System.Drawing.Size(140, 24);
+            this.showPasswordCheckBox.TabIndex = 68;
+            this.showPasswordCheckBox.Text = "Show password";
+            this.showPasswordCheckBox.UseVisualStyleBackColor = true;
+            this.showPasswordCheckBox.CheckedChanged += new System.EventHandler(this.showPasswordCheckBox_CheckedChanged);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(416, 360);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(46, 20);
+            this.label3.TabIndex = 69;
+            this.label3.Text = "Clear";
+            // 
             // Login
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(500, 700);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.showPasswordCheckBox);
             this.Controls.Add(this.registerLabel);
             this.Controls.Add(this.closeXPictureBox);
             this.Controls.Add(this.loginButton);
@@ -160,5 +186,7 @@
         private System.Windows.Forms.Button loginButton;
         private System.Windows.Forms.PictureBox closeXPictureBox;
         private System.Windows.Forms.Label registerLabel;
+        private System.Windows.Forms.CheckBox showPasswordCheckBox;
+        private System.Windows.Forms.Label label3;
     }
 }

@@ -65,5 +65,17 @@ namespace Quick_Start_Finance
         {
             Application.Exit();
         }
+
+        private void showPasswordCheckBox_CheckedChanged(object sender, EventArgs e)
+        {
+            if (showPasswordCheckBox.Checked == true)
+            {
+                loginPasswordTextBox.UseSystemPasswordChar = false;
+            }
+            else
+            {
+                loginPasswordTextBox.UseSystemPasswordChar = true;
+            }
+        }
     }
 }
