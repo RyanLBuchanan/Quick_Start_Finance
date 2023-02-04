@@ -28,7 +28,7 @@ namespace Quick_Start_Finance
         private void DisplayExpense()
         {
             conn.Open();
-            string query = "SELECT * FROM ExpenseTbl";
+            string query = "SELECT * FROM ExpenseTbl WHERE Username = '" + Login.User + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, conn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();

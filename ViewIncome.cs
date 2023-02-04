@@ -28,7 +28,7 @@ namespace Quick_Start_Finance
         private void DisplayIncome()
         {
             conn.Open();
-            string query = "SELECT * FROM IncomeTbl";
+            string query = "SELECT * FROM IncomeTbl WHERE Username = '" + Login.User + "'";
             SqlDataAdapter sda = new SqlDataAdapter(query, conn);
             SqlCommandBuilder builder = new SqlCommandBuilder(sda);
             var ds = new DataSet();
