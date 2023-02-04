@@ -37,7 +37,7 @@
             this.settingsPanel = new System.Windows.Forms.Panel();
             this.settingsPictureBox = new System.Windows.Forms.PictureBox();
             this.settingsLabel = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.totalExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.incomePanel = new System.Windows.Forms.Panel();
             this.incomePictureBox = new System.Windows.Forms.PictureBox();
@@ -182,16 +182,16 @@
             this.settingsLabel.TabIndex = 14;
             this.settingsLabel.Text = "Settings";
             // 
-            // label12
+            // totalExpenseAmountLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label12.Location = new System.Drawing.Point(24, 80);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(198, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Amount in Dollars";
+            this.totalExpenseAmountLabel.AutoSize = true;
+            this.totalExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.totalExpenseAmountLabel.Location = new System.Drawing.Point(24, 80);
+            this.totalExpenseAmountLabel.Name = "totalExpenseAmountLabel";
+            this.totalExpenseAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.totalExpenseAmountLabel.TabIndex = 4;
+            this.totalExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // label13
             // 
@@ -426,7 +426,7 @@
             // totalExpensesPanel
             // 
             this.totalExpensesPanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(219)))), ((int)(((byte)(50)))), ((int)(((byte)(54)))));
-            this.totalExpensesPanel.Controls.Add(this.label12);
+            this.totalExpensesPanel.Controls.Add(this.totalExpenseAmountLabel);
             this.totalExpensesPanel.Controls.Add(this.label13);
             this.totalExpensesPanel.Location = new System.Drawing.Point(824, 56);
             this.totalExpensesPanel.Name = "totalExpensesPanel";
@@ -604,7 +604,7 @@
         private System.Windows.Forms.Panel settingsPanel;
         private System.Windows.Forms.PictureBox settingsPictureBox;
         private System.Windows.Forms.Label settingsLabel;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label totalExpenseAmountLabel;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel incomePanel;
         private System.Windows.Forms.PictureBox incomePictureBox;

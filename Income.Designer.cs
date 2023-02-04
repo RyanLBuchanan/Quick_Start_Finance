@@ -56,7 +56,7 @@
             this.navPanel = new System.Windows.Forms.Panel();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
             this.label13 = new System.Windows.Forms.Label();
-            this.label12 = new System.Windows.Forms.Label();
+            this.totalIncomeAmountLabel = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
             this.incomeTitleTextBox = new System.Windows.Forms.TextBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -390,21 +390,21 @@
             this.label13.TabIndex = 3;
             this.label13.Text = "All My Money\r\n(Total Income)";
             // 
-            // label12
+            // totalIncomeAmountLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label12.Location = new System.Drawing.Point(24, 80);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(198, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Amount in Dollars";
+            this.totalIncomeAmountLabel.AutoSize = true;
+            this.totalIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.totalIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.totalIncomeAmountLabel.Location = new System.Drawing.Point(24, 80);
+            this.totalIncomeAmountLabel.Name = "totalIncomeAmountLabel";
+            this.totalIncomeAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.totalIncomeAmountLabel.TabIndex = 4;
+            this.totalIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(60)))), ((int)(((byte)(186)))), ((int)(((byte)(84)))));
-            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.totalIncomeAmountLabel);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(824, 56);
             this.panel4.Name = "panel4";
@@ -622,7 +622,7 @@
         private System.Windows.Forms.Label personalFinanceDashboardLabel;
         private System.Windows.Forms.Panel navPanel;
         private System.Windows.Forms.Label label13;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label totalIncomeAmountLabel;
         private System.Windows.Forms.Panel panel4;
         private System.Windows.Forms.TextBox incomeTitleTextBox;
         private System.Windows.Forms.Label label1;

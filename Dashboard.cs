@@ -19,7 +19,7 @@ namespace Quick_Start_Finance
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
-        int Income, Expense;
+        private int Income, Expense;
 
         public Dashboard()
         {

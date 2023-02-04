@@ -19,9 +19,14 @@ namespace Quick_Start_Finance
         // LAPTOP database connection
         //SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\ryanl\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
+        private int TotalExpense;
+
         public Expense()
         {
             InitializeComponent();
+
+            // Get total expense amount statistic
+            GetTotalExpense();
         }
 
         private void Clear()
@@ -59,6 +64,24 @@ namespace Quick_Start_Finance
                 {
                     MessageBox.Show(ex.Message);
                 }
+            }
+        }
+
+        private void GetTotalExpense()
+        {
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                TotalExpense = Convert.ToInt32(dt.Rows[0][0]);
+                totalExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
             }
         }
 
