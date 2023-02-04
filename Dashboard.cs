@@ -47,144 +47,235 @@ namespace Quick_Start_Finance
 
         private void GetTotalIncome()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            Income = Convert.ToInt32(dt.Rows[0][0]);
-            totalIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                Income = Convert.ToInt32(dt.Rows[0][0]);
+                totalIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetNumIncomeRecords()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            numberIncomeTransactionsLabel.Text = dt.Rows[0][0].ToString();
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                numberIncomeTransactionsLabel.Text = dt.Rows[0][0].ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetLastIncomeDate()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            lastIncomeTransactionDateLabel.Text = dt.Rows[0][0].ToString();
-            mostRecentIncomeAmountLabel.Text = dt.Rows[0][0].ToString();
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                lastIncomeTransactionDateLabel.Text = dt.Rows[0][0].ToString();
+                mostRecentIncomeAmountLabel.Text = dt.Rows[0][0].ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMaxIncome()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            maxIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                maxIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMinIncome()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            minIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                minIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMostIncomeCategory()
         {
-            conn.Open();
-            string innerQuery = "SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
+            try
+            {
+                conn.Open();
+                string innerQuery = "SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
 
-            string innerQuery1 = "SELECT Category FROM IncomeTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
-            SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
-            DataTable dt1 = new DataTable();
-            sda1.Fill(dt1);
-            mostIncomeCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
-            conn.Close();
+                string innerQuery1 = "SELECT Category FROM IncomeTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
+                SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
+                DataTable dt1 = new DataTable();
+                sda1.Fill(dt1);
+                mostIncomeCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetTotalExpense()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            Expense = Convert.ToInt32(dt.Rows[0][0]);
-            totalExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT SUM(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                Expense = Convert.ToInt32(dt.Rows[0][0]);
+                totalExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetNumExpenseRecords()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            numberExpenseTransactionsLabel.Text = dt.Rows[0][0].ToString();
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT COUNT(*) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                numberExpenseTransactionsLabel.Text = dt.Rows[0][0].ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetLastExpenseDate()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            lastExpenseTransactionDateLabel.Text = dt.Rows[0][0].ToString();
-            mostRecentExpenseAmountLabel.Text = dt.Rows[0][0].ToString();
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                lastExpenseTransactionDateLabel.Text = dt.Rows[0][0].ToString();
+                mostRecentExpenseAmountLabel.Text = dt.Rows[0][0].ToString();
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMaxExpense()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            maxExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                maxExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMinExpense()
         {
-            conn.Open();
-            SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
-            minExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-            conn.Close();
+            try
+            {
+                conn.Open();
+                SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
+                minExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetMostExpenseCategory()
         {
-            conn.Open();
-            string innerQuery = "SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'";
-            SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
-            DataTable dt = new DataTable();
-            sda.Fill(dt);
+            try
+            {
+                conn.Open();
+                string innerQuery = "SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'";
+                SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
+                DataTable dt = new DataTable();
+                sda.Fill(dt);
 
-            string innerQuery1 = "SELECT Category FROM ExpenseTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
-            SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
-            DataTable dt1 = new DataTable();
-            sda1.Fill(dt1);
-            mostExpenseCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
-            conn.Close();
+                string innerQuery1 = "SELECT Category FROM ExpenseTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
+                SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
+                DataTable dt1 = new DataTable();
+                sda1.Fill(dt1);
+                mostExpenseCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
+                conn.Close();
+            }
+            catch (Exception ex)
+            {
+                conn.Close();
+            }
         }
 
         private void GetBalance()
         {
-            double Balance = Income - Expense;
-            balanceLabel.Text = Balance.ToString("C2");
+            try
+            {
+                double Balance = Income - Expense;
+                balanceLabel.Text = Balance.ToString("C2");
+            }
+            catch (Exception ex)
+            {
+                
+            }
         }
 
         private void incomeLabel_Click(object sender, EventArgs e)
