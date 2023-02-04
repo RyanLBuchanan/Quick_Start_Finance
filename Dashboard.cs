@@ -31,8 +31,7 @@ namespace Quick_Start_Finance
             GetLastIncomeDate();
             GetMaxIncome();
             GetMinIncome();
-
-            //GetMostRecentIncome();
+            GetMostIncomeCategory();
 
             // Expense statistics
             GetTotalExpense();
@@ -40,8 +39,7 @@ namespace Quick_Start_Finance
             GetLastExpenseDate();
             GetMaxExpense();
             GetMinExpense();
-
-            //GetMostRecentExpense();
+            GetMostExpenseCategory();
 
             // Get Current Balance
             GetBalance();
@@ -99,15 +97,21 @@ namespace Quick_Start_Finance
             conn.Close();
         }
 
-        //private void GetMostRecentIncome()
-        //{
-        //    conn.Open();
-        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
-        //    DataTable dt = new DataTable();
-        //    sda.Fill(dt);
-        //    mostRecentIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
-        //    conn.Close();
-        //}
+        private void GetMostIncomeCategory()
+        {
+            conn.Open();
+            string innerQuery = "SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            string innerQuery1 = "SELECT Category FROM IncomeTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
+            SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            mostIncomeCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
+            conn.Close();
+        }
 
         private void GetTotalExpense()
         {
@@ -161,15 +165,21 @@ namespace Quick_Start_Finance
             conn.Close();
         }
 
-        //private void GetMostRecentExpense()
-        //{
-        //    conn.Open();
-        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
-        //    DataTable dt = new DataTable();
-        //    sda.Fill(dt);
-        //    mostRecentExpenseAmountLabel.Text = $"{dt.Rows[0][1]:C}";
-        //    conn.Close();
-        //}
+        private void GetMostExpenseCategory()
+        {
+            conn.Open();
+            string innerQuery = "SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'";
+            SqlDataAdapter sda = new SqlDataAdapter(innerQuery, conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+
+            string innerQuery1 = "SELECT Category FROM ExpenseTbl WHERE Amount = '" + dt.Rows[0][0] + "'";
+            SqlDataAdapter sda1 = new SqlDataAdapter(innerQuery1, conn);
+            DataTable dt1 = new DataTable();
+            sda1.Fill(dt1);
+            mostExpenseCategoryLabel.Text = $"{dt1.Rows[0][0]:C}";
+            conn.Close();
+        }
 
         private void GetBalance()
         {
