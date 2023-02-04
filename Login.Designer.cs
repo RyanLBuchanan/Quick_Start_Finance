@@ -131,11 +131,11 @@
             // showPasswordCheckBox
             // 
             this.showPasswordCheckBox.AutoSize = true;
-            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.showPasswordCheckBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.showPasswordCheckBox.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
             this.showPasswordCheckBox.Location = new System.Drawing.Point(40, 360);
             this.showPasswordCheckBox.Name = "showPasswordCheckBox";
-            this.showPasswordCheckBox.Size = new System.Drawing.Size(140, 24);
+            this.showPasswordCheckBox.Size = new System.Drawing.Size(153, 24);
             this.showPasswordCheckBox.TabIndex = 68;
             this.showPasswordCheckBox.Text = "Show password";
             this.showPasswordCheckBox.UseVisualStyleBackColor = true;
@@ -144,11 +144,11 @@
             // clearLoginFieldsLabel
             // 
             this.clearLoginFieldsLabel.AutoSize = true;
-            this.clearLoginFieldsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Underline, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.clearLoginFieldsLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, ((System.Drawing.FontStyle)((System.Drawing.FontStyle.Bold | System.Drawing.FontStyle.Underline))), System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.clearLoginFieldsLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(0)))), ((int)(((byte)(64)))));
-            this.clearLoginFieldsLabel.Location = new System.Drawing.Point(416, 360);
+            this.clearLoginFieldsLabel.Location = new System.Drawing.Point(408, 360);
             this.clearLoginFieldsLabel.Name = "clearLoginFieldsLabel";
-            this.clearLoginFieldsLabel.Size = new System.Drawing.Size(46, 20);
+            this.clearLoginFieldsLabel.Size = new System.Drawing.Size(51, 20);
             this.clearLoginFieldsLabel.TabIndex = 69;
             this.clearLoginFieldsLabel.Text = "Clear";
             this.clearLoginFieldsLabel.Click += new System.EventHandler(this.clearLoginFieldsLabel_Click);
