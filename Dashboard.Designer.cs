@@ -68,31 +68,31 @@
             this.totalExpenseAmountLabel = new System.Windows.Forms.Label();
             this.totalExpenseLabel = new System.Windows.Forms.Label();
             this.maximumIncomePanel = new System.Windows.Forms.Panel();
-            this.label8 = new System.Windows.Forms.Label();
+            this.maxIncomeAmountLabel = new System.Windows.Forms.Label();
             this.maximumIncomeLabel = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
-            this.label5 = new System.Windows.Forms.Label();
+            this.maxExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
-            this.label7 = new System.Windows.Forms.Label();
+            this.minExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
-            this.label10 = new System.Windows.Forms.Label();
+            this.minIncomeAmountLabel = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
             this.panel4 = new System.Windows.Forms.Panel();
-            this.label12 = new System.Windows.Forms.Label();
+            this.mostRecentExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label13 = new System.Windows.Forms.Label();
             this.panel5 = new System.Windows.Forms.Panel();
-            this.label14 = new System.Windows.Forms.Label();
+            this.mostRecentIncomeAmountLabel = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.panel6 = new System.Windows.Forms.Panel();
-            this.label16 = new System.Windows.Forms.Label();
+            this.bestExpenseAmountLabel = new System.Windows.Forms.Label();
             this.label17 = new System.Windows.Forms.Label();
             this.panel7 = new System.Windows.Forms.Panel();
             this.label18 = new System.Windows.Forms.Label();
             this.label19 = new System.Windows.Forms.Label();
             this.panel8 = new System.Windows.Forms.Panel();
-            this.label20 = new System.Windows.Forms.Label();
+            this.bestIncomeAmountLabel = new System.Windows.Forms.Label();
             this.label21 = new System.Windows.Forms.Label();
             this.label22 = new System.Windows.Forms.Label();
             this.label23 = new System.Windows.Forms.Label();
@@ -555,23 +555,23 @@
             // maximumIncomePanel
             // 
             this.maximumIncomePanel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.maximumIncomePanel.Controls.Add(this.label8);
+            this.maximumIncomePanel.Controls.Add(this.maxIncomeAmountLabel);
             this.maximumIncomePanel.Controls.Add(this.maximumIncomeLabel);
             this.maximumIncomePanel.Location = new System.Drawing.Point(240, 376);
             this.maximumIncomePanel.Name = "maximumIncomePanel";
             this.maximumIncomePanel.Size = new System.Drawing.Size(232, 96);
             this.maximumIncomePanel.TabIndex = 8;
             // 
-            // label8
+            // maxIncomeAmountLabel
             // 
-            this.label8.AutoSize = true;
-            this.label8.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label8.Location = new System.Drawing.Point(24, 56);
-            this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(198, 25);
-            this.label8.TabIndex = 4;
-            this.label8.Text = "Amount in Dollars";
+            this.maxIncomeAmountLabel.AutoSize = true;
+            this.maxIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.maxIncomeAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.maxIncomeAmountLabel.Name = "maxIncomeAmountLabel";
+            this.maxIncomeAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.maxIncomeAmountLabel.TabIndex = 4;
+            this.maxIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // maximumIncomeLabel
             // 
@@ -587,23 +587,23 @@
             // panel1
             // 
             this.panel1.BackColor = System.Drawing.Color.DarkGray;
-            this.panel1.Controls.Add(this.label5);
+            this.panel1.Controls.Add(this.maxExpenseAmountLabel);
             this.panel1.Controls.Add(this.label6);
             this.panel1.Location = new System.Drawing.Point(848, 376);
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(232, 96);
             this.panel1.TabIndex = 9;
             // 
-            // label5
+            // maxExpenseAmountLabel
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label5.Location = new System.Drawing.Point(24, 56);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(198, 25);
-            this.label5.TabIndex = 4;
-            this.label5.Text = "Amount in Dollars";
+            this.maxExpenseAmountLabel.AutoSize = true;
+            this.maxExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.maxExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.maxExpenseAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.maxExpenseAmountLabel.Name = "maxExpenseAmountLabel";
+            this.maxExpenseAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.maxExpenseAmountLabel.TabIndex = 4;
+            this.maxExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // label6
             // 
@@ -619,23 +619,23 @@
             // panel2
             // 
             this.panel2.BackColor = System.Drawing.Color.DarkGray;
-            this.panel2.Controls.Add(this.label7);
+            this.panel2.Controls.Add(this.minExpenseAmountLabel);
             this.panel2.Controls.Add(this.label9);
             this.panel2.Location = new System.Drawing.Point(848, 480);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(232, 96);
             this.panel2.TabIndex = 11;
             // 
-            // label7
+            // minExpenseAmountLabel
             // 
-            this.label7.AutoSize = true;
-            this.label7.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label7.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label7.Location = new System.Drawing.Point(24, 56);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(198, 25);
-            this.label7.TabIndex = 4;
-            this.label7.Text = "Amount in Dollars";
+            this.minExpenseAmountLabel.AutoSize = true;
+            this.minExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.minExpenseAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.minExpenseAmountLabel.Name = "minExpenseAmountLabel";
+            this.minExpenseAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.minExpenseAmountLabel.TabIndex = 4;
+            this.minExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // label9
             // 
@@ -651,23 +651,23 @@
             // panel3
             // 
             this.panel3.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel3.Controls.Add(this.label10);
+            this.panel3.Controls.Add(this.minIncomeAmountLabel);
             this.panel3.Controls.Add(this.label11);
             this.panel3.Location = new System.Drawing.Point(240, 480);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(232, 96);
             this.panel3.TabIndex = 10;
             // 
-            // label10
+            // minIncomeAmountLabel
             // 
-            this.label10.AutoSize = true;
-            this.label10.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label10.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label10.Location = new System.Drawing.Point(24, 56);
-            this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(198, 25);
-            this.label10.TabIndex = 4;
-            this.label10.Text = "Amount in Dollars";
+            this.minIncomeAmountLabel.AutoSize = true;
+            this.minIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.minIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.minIncomeAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.minIncomeAmountLabel.Name = "minIncomeAmountLabel";
+            this.minIncomeAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.minIncomeAmountLabel.TabIndex = 4;
+            this.minIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // label11
             // 
@@ -683,23 +683,23 @@
             // panel4
             // 
             this.panel4.BackColor = System.Drawing.Color.DarkGray;
-            this.panel4.Controls.Add(this.label12);
+            this.panel4.Controls.Add(this.mostRecentExpenseAmountLabel);
             this.panel4.Controls.Add(this.label13);
             this.panel4.Location = new System.Drawing.Point(848, 688);
             this.panel4.Name = "panel4";
             this.panel4.Size = new System.Drawing.Size(232, 96);
             this.panel4.TabIndex = 11;
             // 
-            // label12
+            // mostRecentExpenseAmountLabel
             // 
-            this.label12.AutoSize = true;
-            this.label12.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label12.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label12.Location = new System.Drawing.Point(24, 56);
-            this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(198, 25);
-            this.label12.TabIndex = 4;
-            this.label12.Text = "Amount in Dollars";
+            this.mostRecentExpenseAmountLabel.AutoSize = true;
+            this.mostRecentExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mostRecentExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.mostRecentExpenseAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.mostRecentExpenseAmountLabel.Name = "mostRecentExpenseAmountLabel";
+            this.mostRecentExpenseAmountLabel.Size = new System.Drawing.Size(151, 20);
+            this.mostRecentExpenseAmountLabel.TabIndex = 4;
+            this.mostRecentExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // label13
             // 
@@ -715,23 +715,23 @@
             // panel5
             // 
             this.panel5.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel5.Controls.Add(this.label14);
+            this.panel5.Controls.Add(this.mostRecentIncomeAmountLabel);
             this.panel5.Controls.Add(this.label15);
             this.panel5.Location = new System.Drawing.Point(240, 688);
             this.panel5.Name = "panel5";
             this.panel5.Size = new System.Drawing.Size(232, 96);
             this.panel5.TabIndex = 10;
             // 
-            // label14
+            // mostRecentIncomeAmountLabel
             // 
-            this.label14.AutoSize = true;
-            this.label14.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label14.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label14.Location = new System.Drawing.Point(24, 56);
-            this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(198, 25);
-            this.label14.TabIndex = 4;
-            this.label14.Text = "Amount in Dollars";
+            this.mostRecentIncomeAmountLabel.AutoSize = true;
+            this.mostRecentIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.mostRecentIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.mostRecentIncomeAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.mostRecentIncomeAmountLabel.Name = "mostRecentIncomeAmountLabel";
+            this.mostRecentIncomeAmountLabel.Size = new System.Drawing.Size(151, 20);
+            this.mostRecentIncomeAmountLabel.TabIndex = 4;
+            this.mostRecentIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // label15
             // 
@@ -747,23 +747,23 @@
             // panel6
             // 
             this.panel6.BackColor = System.Drawing.Color.DarkGray;
-            this.panel6.Controls.Add(this.label16);
+            this.panel6.Controls.Add(this.bestExpenseAmountLabel);
             this.panel6.Controls.Add(this.label17);
             this.panel6.Location = new System.Drawing.Point(848, 584);
             this.panel6.Name = "panel6";
             this.panel6.Size = new System.Drawing.Size(232, 96);
             this.panel6.TabIndex = 13;
             // 
-            // label16
+            // bestExpenseAmountLabel
             // 
-            this.label16.AutoSize = true;
-            this.label16.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label16.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label16.Location = new System.Drawing.Point(24, 56);
-            this.label16.Name = "label16";
-            this.label16.Size = new System.Drawing.Size(198, 25);
-            this.label16.TabIndex = 4;
-            this.label16.Text = "Amount in Dollars";
+            this.bestExpenseAmountLabel.AutoSize = true;
+            this.bestExpenseAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bestExpenseAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.bestExpenseAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.bestExpenseAmountLabel.Name = "bestExpenseAmountLabel";
+            this.bestExpenseAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.bestExpenseAmountLabel.TabIndex = 4;
+            this.bestExpenseAmountLabel.Text = "Amount in Dollars";
             // 
             // label17
             // 
@@ -811,23 +811,23 @@
             // panel8
             // 
             this.panel8.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-            this.panel8.Controls.Add(this.label20);
+            this.panel8.Controls.Add(this.bestIncomeAmountLabel);
             this.panel8.Controls.Add(this.label21);
             this.panel8.Location = new System.Drawing.Point(240, 584);
             this.panel8.Name = "panel8";
             this.panel8.Size = new System.Drawing.Size(232, 96);
             this.panel8.TabIndex = 14;
             // 
-            // label20
+            // bestIncomeAmountLabel
             // 
-            this.label20.AutoSize = true;
-            this.label20.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label20.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
-            this.label20.Location = new System.Drawing.Point(24, 56);
-            this.label20.Name = "label20";
-            this.label20.Size = new System.Drawing.Size(198, 25);
-            this.label20.TabIndex = 4;
-            this.label20.Text = "Amount in Dollars";
+            this.bestIncomeAmountLabel.AutoSize = true;
+            this.bestIncomeAmountLabel.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.bestIncomeAmountLabel.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(244)))), ((int)(((byte)(194)))), ((int)(((byte)(13)))));
+            this.bestIncomeAmountLabel.Location = new System.Drawing.Point(24, 56);
+            this.bestIncomeAmountLabel.Name = "bestIncomeAmountLabel";
+            this.bestIncomeAmountLabel.Size = new System.Drawing.Size(198, 25);
+            this.bestIncomeAmountLabel.TabIndex = 4;
+            this.bestIncomeAmountLabel.Text = "Amount in Dollars";
             // 
             // label21
             // 
@@ -981,31 +981,31 @@
         private System.Windows.Forms.Label totalExpenseAmountLabel;
         private System.Windows.Forms.Label totalExpenseLabel;
         private System.Windows.Forms.Panel maximumIncomePanel;
-        private System.Windows.Forms.Label label8;
+        private System.Windows.Forms.Label maxIncomeAmountLabel;
         private System.Windows.Forms.Label maximumIncomeLabel;
         private System.Windows.Forms.Panel panel1;
-        private System.Windows.Forms.Label label5;
+        private System.Windows.Forms.Label maxExpenseAmountLabel;
         private System.Windows.Forms.Label label6;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.Label label7;
+        private System.Windows.Forms.Label minExpenseAmountLabel;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.Panel panel3;
-        private System.Windows.Forms.Label label10;
+        private System.Windows.Forms.Label minIncomeAmountLabel;
         private System.Windows.Forms.Label label11;
         private System.Windows.Forms.Panel panel4;
-        private System.Windows.Forms.Label label12;
+        private System.Windows.Forms.Label mostRecentExpenseAmountLabel;
         private System.Windows.Forms.Label label13;
         private System.Windows.Forms.Panel panel5;
-        private System.Windows.Forms.Label label14;
+        private System.Windows.Forms.Label mostRecentIncomeAmountLabel;
         private System.Windows.Forms.Label label15;
         private System.Windows.Forms.Panel panel6;
-        private System.Windows.Forms.Label label16;
+        private System.Windows.Forms.Label bestExpenseAmountLabel;
         private System.Windows.Forms.Label label17;
         private System.Windows.Forms.Panel panel7;
         private System.Windows.Forms.Label label18;
         private System.Windows.Forms.Label label19;
         private System.Windows.Forms.Panel panel8;
-        private System.Windows.Forms.Label label20;
+        private System.Windows.Forms.Label bestIncomeAmountLabel;
         private System.Windows.Forms.Label label21;
         private System.Windows.Forms.Panel exitPanel;
         private System.Windows.Forms.PictureBox exitPictureBox;

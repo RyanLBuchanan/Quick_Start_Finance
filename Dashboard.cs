@@ -22,12 +22,24 @@ namespace Quick_Start_Finance
         public Dashboard()
         {
             InitializeComponent();
+            
+            // Income statistics
             GetTotalIncome();
             GetNumIncomeRecords();
             GetLastIncomeDate();
+            GetMaxIncome();
+            GetMinIncome();
+
+            //GetMostRecentIncome();
+
+            // Expense statistics
             GetTotalExpense();
             GetNumExpenseRecords();
             GetLastExpenseDate();
+            GetMaxExpense();
+            GetMinExpense();
+
+            //GetMostRecentExpense();
         }
 
         private void GetTotalIncome()
@@ -57,8 +69,39 @@ namespace Quick_Start_Finance
             DataTable dt = new DataTable();
             sda.Fill(dt);
             lastIncomeTransactionDateLabel.Text = dt.Rows[0][0].ToString();
+            mostRecentIncomeAmountLabel.Text = dt.Rows[0][0].ToString();
             conn.Close();
         }
+
+        private void GetMaxIncome()
+        {
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            maxIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+            conn.Close();
+        }
+
+        private void GetMinIncome()
+        {
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            minIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+            conn.Close();
+        }
+
+        //private void GetMostRecentIncome()
+        //{
+        //    conn.Open();
+        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM IncomeTbl WHERE Username = '" + Login.User + "'", conn);
+        //    DataTable dt = new DataTable();
+        //    sda.Fill(dt);
+        //    mostRecentIncomeAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+        //    conn.Close();
+        //}
 
         private void GetTotalExpense()
         {
@@ -87,8 +130,39 @@ namespace Quick_Start_Finance
             DataTable dt = new DataTable();
             sda.Fill(dt);
             lastExpenseTransactionDateLabel.Text = dt.Rows[0][0].ToString();
+            mostRecentExpenseAmountLabel.Text = dt.Rows[0][0].ToString();
             conn.Close();
         }
+
+        private void GetMaxExpense()
+        {
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            maxExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+            conn.Close();
+        }
+
+        private void GetMinExpense()
+        {
+            conn.Open();
+            SqlDataAdapter sda = new SqlDataAdapter("SELECT Min(Amount) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+            DataTable dt = new DataTable();
+            sda.Fill(dt);
+            minExpenseAmountLabel.Text = $"{dt.Rows[0][0]:C}";
+            conn.Close();
+        }
+
+        //private void GetMostRecentExpense()
+        //{
+        //    conn.Open();
+        //    SqlDataAdapter sda = new SqlDataAdapter("SELECT MAX(Date) FROM ExpenseTbl WHERE Username = '" + Login.User + "'", conn);
+        //    DataTable dt = new DataTable();
+        //    sda.Fill(dt);
+        //    mostRecentExpenseAmountLabel.Text = $"{dt.Rows[0][1]:C}";
+        //    conn.Close();
+        //}
 
         private void incomeLabel_Click(object sender, EventArgs e)
         {
