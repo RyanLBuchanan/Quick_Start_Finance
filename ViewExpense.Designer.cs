@@ -58,10 +58,6 @@
             this.logoutPictureBox = new System.Windows.Forms.PictureBox();
             this.logoutLabel = new System.Windows.Forms.Label();
             this.logoPictureBox = new System.Windows.Forms.PictureBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.expenseDataGridView = new Guna.UI2.WinForms.Guna2DataGridView();
             this.viewExpensePanel.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.viewExpensePictureBox)).BeginInit();
@@ -374,45 +370,6 @@
             this.logoPictureBox.TabIndex = 0;
             this.logoPictureBox.TabStop = false;
             // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label4.Location = new System.Drawing.Point(570, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 50);
-            this.label4.TabIndex = 51;
-            this.label4.Text = "What kind of income\r\n(Category)";
-            // 
-            // categoryComboBox
-            // 
-            this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(570, 136);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
-            this.categoryComboBox.TabIndex = 50;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(274, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(253, 50);
-            this.label1.TabIndex = 46;
-            this.label1.Text = "What I spent money on\r\n(Expense Title)\r\n";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(274, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 31);
-            this.textBox1.TabIndex = 49;
-            // 
             // expenseDataGridView
             // 
             dataGridViewCellStyle1.BackColor = System.Drawing.Color.White;
@@ -436,11 +393,11 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.expenseDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.expenseDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.expenseDataGridView.Location = new System.Drawing.Point(248, 232);
+            this.expenseDataGridView.Location = new System.Drawing.Point(248, 88);
             this.expenseDataGridView.Name = "expenseDataGridView";
             this.expenseDataGridView.RowHeadersVisible = false;
             this.expenseDataGridView.RowTemplate.Height = 40;
-            this.expenseDataGridView.Size = new System.Drawing.Size(832, 520);
+            this.expenseDataGridView.Size = new System.Drawing.Size(832, 664);
             this.expenseDataGridView.TabIndex = 52;
             this.expenseDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.expenseDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -473,10 +430,6 @@
             this.Controls.Add(this.expenseDataGridView);
             this.Controls.Add(this.personalFinanceDashboardLabel);
             this.Controls.Add(this.navPanel);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.categoryComboBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
             this.Name = "ViewExpense";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -542,10 +495,6 @@
         private System.Windows.Forms.PictureBox logoutPictureBox;
         private System.Windows.Forms.Label logoutLabel;
         private System.Windows.Forms.PictureBox logoPictureBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox categoryComboBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private Guna.UI2.WinForms.Guna2DataGridView expenseDataGridView;
     }
 }

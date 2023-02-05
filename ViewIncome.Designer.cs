@@ -32,10 +32,6 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
-            this.label4 = new System.Windows.Forms.Label();
-            this.categoryComboBox = new System.Windows.Forms.ComboBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
             this.exitLabel = new System.Windows.Forms.Label();
             this.exitPanel = new System.Windows.Forms.Panel();
             this.exitPictureBox = new System.Windows.Forms.PictureBox();
@@ -84,45 +80,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.logoPictureBox)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.incomeDataGridView)).BeginInit();
             this.SuspendLayout();
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label4.Location = new System.Drawing.Point(570, 80);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(226, 50);
-            this.label4.TabIndex = 44;
-            this.label4.Text = "What kind of income\r\n(Category)";
-            // 
-            // categoryComboBox
-            // 
-            this.categoryComboBox.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.categoryComboBox.FormattingEnabled = true;
-            this.categoryComboBox.Location = new System.Drawing.Point(570, 136);
-            this.categoryComboBox.Name = "categoryComboBox";
-            this.categoryComboBox.Size = new System.Drawing.Size(216, 33);
-            this.categoryComboBox.TabIndex = 43;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(72)))), ((int)(((byte)(133)))), ((int)(((byte)(237)))));
-            this.label1.Location = new System.Drawing.Point(274, 80);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(231, 50);
-            this.label1.TabIndex = 34;
-            this.label1.Text = "What money came in\r\n(Income Title)";
-            // 
-            // textBox1
-            // 
-            this.textBox1.Font = new System.Drawing.Font("Microsoft Sans Serif", 15.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.textBox1.Location = new System.Drawing.Point(274, 136);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.Size = new System.Drawing.Size(232, 31);
-            this.textBox1.TabIndex = 38;
             // 
             // exitLabel
             // 
@@ -437,7 +394,7 @@
             dataGridViewCellStyle3.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
             this.incomeDataGridView.DefaultCellStyle = dataGridViewCellStyle3;
             this.incomeDataGridView.GridColor = System.Drawing.Color.FromArgb(((int)(((byte)(231)))), ((int)(((byte)(229)))), ((int)(((byte)(255)))));
-            this.incomeDataGridView.Location = new System.Drawing.Point(248, 232);
+            this.incomeDataGridView.Location = new System.Drawing.Point(248, 88);
             this.incomeDataGridView.Name = "incomeDataGridView";
             dataGridViewCellStyle4.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
             dataGridViewCellStyle4.BackColor = System.Drawing.SystemColors.Control;
@@ -449,7 +406,7 @@
             this.incomeDataGridView.RowHeadersDefaultCellStyle = dataGridViewCellStyle4;
             this.incomeDataGridView.RowHeadersVisible = false;
             this.incomeDataGridView.RowTemplate.Height = 40;
-            this.incomeDataGridView.Size = new System.Drawing.Size(832, 520);
+            this.incomeDataGridView.Size = new System.Drawing.Size(832, 664);
             this.incomeDataGridView.TabIndex = 45;
             this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.BackColor = System.Drawing.Color.White;
             this.incomeDataGridView.ThemeStyle.AlternatingRowsStyle.Font = null;
@@ -480,10 +437,6 @@
             this.BackColor = System.Drawing.Color.White;
             this.ClientSize = new System.Drawing.Size(1100, 800);
             this.Controls.Add(this.incomeDataGridView);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.categoryComboBox);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.textBox1);
             this.Controls.Add(this.personalFinanceDashboardLabel);
             this.Controls.Add(this.navPanel);
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -531,10 +484,6 @@
         private System.Windows.Forms.PictureBox viewExpensePictureBox;
         private System.Windows.Forms.PictureBox settingsPictureBox;
         private System.Windows.Forms.PictureBox logoutPictureBox;
-        private System.Windows.Forms.Label label4;
-        private System.Windows.Forms.ComboBox categoryComboBox;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.TextBox textBox1;
         private System.Windows.Forms.PictureBox expensePictureBox;
         private System.Windows.Forms.PictureBox logoPictureBox;
         private System.Windows.Forms.Label exitLabel;
