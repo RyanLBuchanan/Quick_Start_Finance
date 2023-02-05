@@ -13,6 +13,8 @@ namespace Quick_Start_Finance
 {
     public partial class Login : Form
     {
+        //SqlConnection conn = new SqlConnection(@"Data Source = (LocalDB)\MSSQLLocalDB;Initial Catalog = QSFDB");
+
         // HOME PC database connection
         SqlConnection conn = new SqlConnection(@"Data Source=(LocalDB)\MSSQLLocalDB;AttachDbFilename=C:\Users\vreed\Documents\QSFDb.mdf;Integrated Security=True;Connect Timeout=30");
 
