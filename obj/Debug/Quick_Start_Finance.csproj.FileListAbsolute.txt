@@ -36,3 +36,7 @@ C:\Users\ryanl\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj
 C:\Users\ryanl\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.csproj.CopyComplete
 C:\Users\ryanl\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.exe
 C:\Users\ryanl\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.pdb
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\bin\Debug\Quick_Start_Finance.exe.manifest
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\bin\Debug\Quick_Start_Finance.application
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.exe.manifest
+C:\Users\vreed\Desktop\Ryan\OTech\Visual_Studio_Capstone\Quick_Start_Finance\obj\Debug\Quick_Start_Finance.application
